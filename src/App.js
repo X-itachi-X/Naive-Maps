@@ -53,7 +53,7 @@ const cityName = 'New York'; // Replace with the city name you want to look up.
 getCityLocation(cityName)
   .then((location) => {
     console.log('Location:', location);
-    var l1 = location;
+     l1 = location;
   })
   .catch((error) => {
     console.error('Error:', error);
