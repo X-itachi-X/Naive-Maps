@@ -23,10 +23,10 @@ function App() {
           <div className='box'>
             <div className='emptyDiv'></div>
             <form>
-              
+              <input className='textBox' type="text" placeholder='Starting Point'></input>
+              <input className='textBox' type="text" placeholder='Destination Point'></input>
             </form>
-            <input className='textBox' type="text" placeholder='Starting Point'></input>
-            <input className='textBox' type="text" placeholder='Destination Point'></input>
+            
             <a href="/"><button class="bn632-hover bn23">Button</button></a>
             
           </div>
