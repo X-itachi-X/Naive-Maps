@@ -2,6 +2,41 @@ import './App.css';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import CityLocation from './components/CityLocation';
 
+const axios = require('axios');
+
+async function getCityLocation(cityName) {
+  const apiKey = 'sk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbm14Ymk0eTAwZnMyaXAxNmNoZGZocGUifQ.fZcPqWqoZXQhYQ-WmvdU5Q'; // Replace with your Mapbox API key
+
+  try {
+    const response = await axios.get(
+      `https://api.mapbox.com/geocoding/v5/mapbox.places/${cityName}.json?access_token=${apiKey}`
+    );
+
+    if (response.data.features.length > 0) {
+      const location = response.data.features[0].center;
+      const latitude = location[1];
+      const longitude = location[0];
+      return { latitude, longitude };
+    } else {
+      throw new Error('City not found or there was an error.');
+    }
+  } catch (error) {
+    throw new Error('Error:', error);
+  }
+}
+
+// Example usage:
+const cityName = 'New York'; // Replace with the city name you want to look up
+getCityLocation(cityName)
+  .then((location) => {
+    console.log('Latitude:', location.latitude);
+    console.log('Longitude:', location.longitude);
+  })
+  .catch((error) => {
+    console.error(error.message);
+  });
+
+
 function App() {
   return (
     <div className="App">
