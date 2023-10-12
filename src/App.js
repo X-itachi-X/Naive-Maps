@@ -25,9 +25,9 @@ function App() {
 // Replace 'YOUR_MAPBOX_API_KEY' with your actual Mapbox API key.
 const MAPBOX_API_KEY = 'sk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbm14Ymk0eTAwZnMyaXAxNmNoZGZocGUifQ.fZcPqWqoZXQhYQ-WmvdU5Q';
 
-async function getCityLocation(cityName) {
+ function getCityLocation(cityName) {
   try {
-    const response = await axios.get(
+    const response =  axios.get(
       `https://api.mapbox.com/geocoding/v5/mapbox.places/${cityName}.json?access_token=${MAPBOX_API_KEY}`
     );
 
@@ -47,13 +47,12 @@ async function getCityLocation(cityName) {
     throw error;
   }
 }
-var l1;
+
 // Example usage:
 const cityName = 'New York'; // Replace with the city name you want to look up.
 getCityLocation(cityName)
   .then((location) => {
     console.log('Location:', location);
-     l1 = location;
   })
   .catch((error) => {
     console.error('Error:', error);
@@ -94,7 +93,7 @@ getCityLocation(cityName)
                       onChange={handleCityNameChange1}>
                       
               </input>
-              <p>{l1},{long1},{lat1}</p>
+              <p>{long1},{lat1}</p>
               <br></br>
               <input className='textBox' 
                      ype="text"
