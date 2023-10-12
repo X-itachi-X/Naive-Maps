@@ -75,7 +75,7 @@ getCityLocation(cityName1)
     
     <div className="App">
 
-      <Router>
+      
       <header className="header-parent">
         <div className="header-background">
 
@@ -116,16 +116,13 @@ getCityLocation(cityName1)
               <input type="submit" value="Submit" class="bn632-hover bn23"></input>
             </form>
             
-            <Link to="/city-location">city</Link>
-              <Routes>
-                <Route path="/city-location" element={<CityLocation />} />
-              </Routes>
+            
             
             
           </div>
         </div>
       </main>
-    </Router>
+    
     </div>
   );
 }
