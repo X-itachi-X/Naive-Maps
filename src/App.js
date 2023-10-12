@@ -7,7 +7,8 @@ import CityLocation from './components/CityLocation';
 function App() {
   const [cityName1, setCityName1] = useState('');
   const [cityName2, setCityName2] = useState('');
-
+  const [latitude, setLatitude] = useState(null);
+  const [longitude, setLongitude] = useState(null);
   const handleCityNameChange1 = (e) => {
     setCityName1(e.target.value);
   }
@@ -27,8 +28,8 @@ async function getCityLocation(cityName) {
 
     if (response.data.features.length > 0) {
       const location = response.data.features[0].center;
-      const latitude = location[1];
-      const longitude = location[0];
+      setLatitude(location[1]);
+      setLongitude(location[0]);
       
       return { latitude, longitude };
     } else {
