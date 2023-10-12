@@ -58,6 +58,14 @@ getCityLocation(cityName1)
     console.error('Error:', error);
   });
 
+  getCityLocation(cityName2)
+  .then((location) => {
+    console.log('Destination Location:', location);
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });
+
 
   
 
