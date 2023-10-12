@@ -58,6 +58,8 @@ const cityName = 'New York'; // Replace with the city name you want to look up.
 //     console.error('Error:', error);
 //   });
 
+const test = getCityLocation("abc");
+
   
 
 
@@ -93,7 +95,7 @@ const cityName = 'New York'; // Replace with the city name you want to look up.
                       onChange={handleCityNameChange1}>
                       
               </input>
-              <p>{long1},{lat1}</p>
+              <p>{test}</p>
               <br></br>
               <input className='textBox' 
                      ype="text"
