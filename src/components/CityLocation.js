@@ -1,57 +1,44 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-class CityLocation extends Component {
-  state = {
-    cityName: '',
-    latitude: null,
-    longitude: null,
-  };
+function CityLocation({ cityName }) {
+  const [latitude, setLatitude] = useState(null);
+  const [longitude, setLongitude] = useState(null);
 
-  handleChange = (e) => {
-    this.setState({ cityName: e.target.value });
-  };
-
-  getCityLocation = () => {
-    const { cityName } = this.state;
-    const apiKey = 'sk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbm14Ymk0eTAwZnMyaXAxNmNoZGZocGUifQ.fZcPqWqoZXQhYQ-WmvdU5Q';
-
-    axios
-      .get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${cityName}.json?access_token=${apiKey}`)
-      .then((response) => {
+  useEffect(() => {
+    const getCityLocation = async () => {
+      const apiKey = 'YOUR_MAPBOX_API_KEY'; // Replace with your Mapbox API key
+      try {
+        const response = await axios.get(
+          `https://api.mapbox.com/geocoding/v5/mapbox.places/${cityName}.json?access_token=${apiKey}`
+        );
         if (response.data.features.length > 0) {
           const location = response.data.features[0].center;
-          this.setState({ latitude: location[1], longitude: location[0] });
-        } else {
-          alert('City not found or there was an error.');
+          setLatitude(location[1]);
+          setLongitude(location[0]);
         }
-      })
-      .catch((error) => {
+      } catch (error) {
         console.error('Error:', error);
-      });
-  };
+      }
+    };
 
-  render() {
-    return (
-      <div>
-        <h1>City Location Finder</h1>
-        <input
-          type="text"
-          placeholder="Enter city name"
-          value={this.state.cityName}
-          onChange={this.handleChange}
-        />
-        <button onClick={this.getCityLocation}>Get Location</button>
-        {this.state.latitude !== null && this.state.longitude !== null && (
-          <div>
-            <p>name: {this.state.cityName}</p>
-            <p>Latitude: {this.state.latitude}</p>
-            <p>Longitude: {this.state.longitude}</p>
-          </div>
-        )}
-      </div>
-    );
-  }
+    if (cityName) {
+      getCityLocation();
+    }
+  }, [cityName]);
+
+  return (
+    <div>
+      <h1>City Location Finder</h1>
+      <p>City Name: {cityName}</p>
+      {latitude !== null && longitude !== null && (
+        <div>
+          <p>Latitude: {latitude}</p>
+          <p>Longitude: {longitude}</p>
+        </div>
+      )}
+    </div>
+  );
 }
 
 export default CityLocation;
