@@ -1,5 +1,4 @@
 import * as React from "react";
-import { render } from "react-dom";
 import Geocoder from '@mapbox/mapbox-gl-geocoder';
 import './App.css';
 
@@ -51,10 +50,6 @@ function parseReverseGeo(geoData) {
     complete: geoData.place_name
   };
 }
-
-function _suggestionSelect(result, lat, long, text) {
-  console.log(result, lat, long, text);
-};
 
 function App() {
   const [suggestion, setSuggestion] = React.useState({});
