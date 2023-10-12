@@ -10,7 +10,9 @@ function App() {
         </div>
         <div className="header-content">
           <p>Home</p>
-          
+        
+          <p>content 3</p>
+          <p>content 4</p>
         </div>
         
       </header>
@@ -20,6 +22,9 @@ function App() {
         <div className='body-content'>
           <div className='box'>
             <div className='emptyDiv'></div>
+            <form>
+              
+            </form>
             <input className='textBox' type="text" placeholder='Starting Point'></input>
             <input className='textBox' type="text" placeholder='Destination Point'></input>
             <a href="/"><button class="bn632-hover bn23">Button</button></a>
