@@ -1,5 +1,32 @@
 import './App.css';
 
+const axios = require('axios'); // You may need to install the axios library.
+
+function getCityLocation(cityName) {
+  const apiKey = 'YOUR_MAPBOX_API_KEY';
+
+  axios
+    .get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${cityName}.json?access_token=${apiKey}`)
+    .then((response) => {
+      if (response.data.features.length > 0) {
+        const location = response.data.features[0].center;
+        const latitude = location[1];
+        const longitude = location[0];
+        console.log(`Latitude: ${latitude}`);
+        console.log(`Longitude: ${longitude}`);
+      } else {
+        console.error('City not found or there was an error.');
+      }
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+}
+
+// Example usage:
+const cityName = 'New York'; // Replace with the city name you want to look up.
+getCityLocation(cityName);
+
 function App() {
   return (
     <div className="App">
