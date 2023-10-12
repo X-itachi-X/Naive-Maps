@@ -20,7 +20,7 @@ function App() {
         <div className='body-background'></div>
         <div className='body-content'>
           <div className='box'>
-          <a class="bn31" href="/"><span class="bn31span">Button</span></a>
+          <a href="/"><button class="bn632-hover bn23">Button</button></a>
           </div>
         </div>
       </main>
