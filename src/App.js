@@ -16,6 +16,9 @@ function App() {
         </div>
         
       </header>
+      <main className='body'>
+        
+      </main>
     </div>
   );
 }
