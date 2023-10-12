@@ -24,7 +24,7 @@
 .header-content {
   position: absolute;
   top: 0;
-  
+  left:auto;
   
   display: flex;
   justify-content: space-evenly;
