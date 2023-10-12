@@ -50,15 +50,14 @@ const MAPBOX_API_KEY = 'sk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbm14Ymk0eTAwZnMyaXAxN
 
 // Example usage:
 const cityName = 'New York'; // Replace with the city name you want to look up.
-// getCityLocation(cityName)
-//   .then((location) => {
-//     console.log('Location:', location);
-//   })
-//   .catch((error) => {
-//     console.error('Error:', error);
-//   });
+getCityLocation(cityName1)
+  .then((location) => {
+    console.log('Start Location:', location);
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });
 
-const test = parseInt(getCityLocation("abc"));
 
   
 
@@ -95,7 +94,7 @@ const test = parseInt(getCityLocation("abc"));
                       onChange={handleCityNameChange1}>
                       
               </input>
-              <p>{test}</p>
+              <p>{}</p>
               <br></br>
               <input className='textBox' 
                      ype="text"
