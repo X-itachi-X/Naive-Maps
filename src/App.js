@@ -89,7 +89,10 @@ getCityLocation(cityName)
                       onChange={handleCityNameChange1}>
                       
               </input>
-              <p>{getCityLocation("abc")},{long1},{lat1}</p>
+              <p id="output"></p>
+              <script>
+                document.getElementById("output").textContent = getCityLocation("abc");
+              </script>
               <br></br>
               <input className='textBox' 
                      ype="text"
