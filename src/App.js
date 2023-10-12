@@ -35,6 +35,12 @@ function App() {
               <br></br>
               <input type="submit" value="Submit" class="bn632-hover bn23"></input>
             </form>
+            <input
+          type="text"
+          placeholder="Enter city name"
+          value={cityName}
+          onChange={(e) => setCityName(e.target.value)}
+        />
             
             <Link to="/city-location">city</Link>
               <Routes>
