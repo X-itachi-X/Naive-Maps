@@ -50,15 +50,15 @@ async function getCityLocation(cityName) {
 
 // Example usage:
 const cityName = 'New York'; // Replace with the city name you want to look up.
-// getCityLocation(cityName)
-//   .then((location) => {
-//     console.log('Location:', location);
-//   })
-//   .catch((error) => {
-//     console.error('Error:', error);
-//   });
+getCityLocation(cityName)
+  .then((location) => {
+    console.log('Location:', getCityLocation("abc"));
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });
 
-  const getName = getCityLocation("abc");
+  
 
 
 
