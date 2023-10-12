@@ -12,7 +12,7 @@ function App() {
   const [latitude, setLatitude] = useState(null);
   const [longitude, setLongitude] = useState(null);
   const handleCityNameChange1 = (e) => {
-    setCityName1(longitude);
+    setCityName1(e.target.value);
   }
   const handleCityNameChange2 = (e) => {
     setCityName2(e.target.value);
