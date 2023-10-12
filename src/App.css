@@ -98,3 +98,7 @@
   box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
 }
 
+.textBox{
+  border-radius: 1rem;
+}
+
