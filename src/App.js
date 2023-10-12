@@ -33,7 +33,7 @@ getCityLocation(cityName)
     console.log('Longitude:', location.longitude);
   })
   .catch((error) => {
-    console.error(error.message);
+    console.error("error");
   });
 
 
