@@ -30,8 +30,7 @@ async function getCityLocation(cityName) {
 
     if (response.data.features.length > 0) {
       const location = response.data.features[0].center;
-      setLatitude(location[1]);
-      setLongitude(location[0]);
+      
       
       return { latitude, longitude };
     } else {
@@ -46,7 +45,8 @@ async function getCityLocation(cityName) {
 const cityName = 'New York'; // Replace with the city name you want to look up.
 getCityLocation(cityName)
   .then((location) => {
-    console.log('Location:', location);
+      setLatitude(location[1]);
+      setLongitude(location[0]);
   })
   .catch((error) => {
     console.error('Error:', error);
