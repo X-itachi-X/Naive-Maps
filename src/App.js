@@ -21,7 +21,9 @@ function App() {
 
         </div>
         <div className='body-content'>
-          <p>hello world</p>
+          <div className='box'>
+
+          </div>
         </div>
       </main>
     </div>
