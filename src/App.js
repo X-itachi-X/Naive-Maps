@@ -34,7 +34,7 @@ function App() {
             <Router>
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/city-location" element={<CityLocation />} />
+                <Route path="./components/CityLocation.js" element={<CityLocation />} />
                 </Routes>
             </Router>
           </div>
