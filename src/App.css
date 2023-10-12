@@ -100,7 +100,7 @@
 
 .textBox{
   border-radius: 0.5rem;
-  margin: auto;
+ margin-left: auto;
   width:10rem;
   height: 2rem;
   margin: 2rem 0px;
