@@ -1,7 +1,32 @@
 import './App.css';
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import CityLocation from './components/CityLocation';
+
+function CityLocation(props) {
+  const [latitude, setLatitude] = useState(null);
+  const [longitude, setLongitude] = useState(null);
+
+  const { cityName } = props;
+
+  // You can make the API call to get the latitude and longitude using the cityName
+  // Replace this with your actual API call logic
+  // For the sake of this example, we'll just set some dummy values:
+  setLatitude(40.7128);
+  setLongitude(-74.0060);
+
+  return (
+    <div>
+      <h2>City Location for {cityName}</h2>
+      {latitude !== null && longitude !== null && (
+        <div>
+          <p>Latitude: {latitude}</p>
+          <p>Longitude: {longitude}</p>
+        </div>
+      )}
+    </div>
+  );
+}
+
 
 function App() {
   const [cityName, setCityName] = useState('');
