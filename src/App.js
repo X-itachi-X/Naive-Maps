@@ -1,6 +1,11 @@
 
 import './App.css';
 
+const mapAccess = {
+  mapboxApiAccessToken:
+    "pk.eyJ1Ijoiam9uc2VuIiwiYSI6IkR6UU9oMDQifQ.dymRIgqv-UV6oz0-HCFx1w"
+};
+
 function App() {
   return (
     <div className="App">
