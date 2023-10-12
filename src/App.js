@@ -71,11 +71,6 @@ getCityLocation(cityName1)
     console.error('Error:', error);
   });
 
-
-  
-
-
-
   return (
     
     <div className="App">
