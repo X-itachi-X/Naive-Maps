@@ -43,8 +43,9 @@
 }
 
 .body{
-  background: rgb(103,0,209);
-background: radial-gradient(circle, rgba(103,0,209,1) 33%, rgba(0,0,0,1) 100%);
+  background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
 height: 100vh;
 margin-top: -4rem;
 filter:blur(2px)
