@@ -81,7 +81,7 @@ getCityLocation(cityName)
                       onChange={handleCityNameChange1}>
                       
               </input>
-              <p>{}</p>
+              <p>{cityName1}</p>
               <br></br>
               <input className='textBox' 
                      ype="text"
