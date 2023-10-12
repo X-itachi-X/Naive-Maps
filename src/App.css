@@ -42,15 +42,17 @@
     transform: rotate(360deg);
   }
 }
-
-.body-background{
-  background-image: url("./bg.jpg");
-
-height: 100vh;
-width: 100%;
-margin-top: -4rem;
-filter:blur(5rem)
+@media (min-width: 768px){
+  .body-background{
+    background-image: url("./bg.jpg");
+  
+  height: 100vh;
+  width: 100%;
+  margin-top: -4rem;
+  filter:blur(5rem)
+  }
 }
+
 
 @media (max-width: 768px) {
   .body-background{
