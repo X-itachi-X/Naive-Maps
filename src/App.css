@@ -19,8 +19,8 @@
   min-height: 4rem;
   font-size: calc(10px + 2vmin);
   color: white;
-  filter:blur(2px)
-  box-shadow
+  filter:blur(2px);
+  box-shadow: 10px 10px;
 }
 .header-content {
   position: relative;
