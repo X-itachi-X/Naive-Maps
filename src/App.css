@@ -55,9 +55,7 @@ filter:blur(5rem)
 @media (max-width: 768px) {
   .body-background{
     background-image: url("./bg2.jpg");
-  
-  
-  margin-top: -4rem;
+    margin-top: -4rem;
   
   }
 }
