@@ -30,6 +30,16 @@ function CityLocation(props) {
 
 function App() {
   const [cityName, setCityName] = useState('');
+
+  const handleCityNameChange = (e) => {
+    setCityName(e.target.value);
+  }
+
+  const handleGetLocation = () => {
+    // You can call an API or any other logic to fetch location data here.
+    // For this example, we'll set the cityName prop and receive location data directly.
+  }
+
   return (
     
     <div className="App">
@@ -55,8 +65,12 @@ function App() {
             <div className='emptyDiv'></div>
             <form autocomplete="on">
               <input className='textBox' type="text" placeholder='Starting Point'></input>
+              <p>Latitude: {latitude}</p>
+              <p>Longitude: {longitude}</p>
               <br></br>
               <input className='textBox' type="text" placeholder='Destination Point'></input>
+              <p>Latitude: {latitude}</p>
+              <p>Longitude: {longitude}</p>
               <br></br>
               <input type="submit" value="Submit" class="bn632-hover bn23"></input>
             </form>
