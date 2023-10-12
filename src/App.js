@@ -38,7 +38,7 @@ function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/city-location">City Location</Link>
+            <Link to="./components/CityLocation.js">City Location</Link>
           </li>
         </ul>
 
