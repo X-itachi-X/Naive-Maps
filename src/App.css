@@ -56,7 +56,7 @@
 
 @media (max-width: 768px) {
   .body-background{
-    background-image: url("./bg2.jpg");
+    background-image: url("./bg.jpg");
     margin-top: rem;
     height:5rem;
     width:5rem;
