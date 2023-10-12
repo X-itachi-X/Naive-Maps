@@ -30,7 +30,24 @@ function App() {
               <br></br>
               <input type="submit" value="Submit" class="bn632-hover bn23"></input>
             </form>
-            
+            <Router>
+      <div>
+        <h1>My React App</h1>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/city-location">City Location</Link>
+          </li>
+        </ul>
+
+        <hr />
+
+        <Route exact path="/" render={() => <div>Home Page</div>} />
+        <Route path="/city-location" component={CityLocation} />
+      </div>
+    </Router>
           </div>
         </div>
       </main>
