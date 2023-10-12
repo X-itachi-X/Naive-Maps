@@ -1,5 +1,3 @@
-import * as React from "react";
-import { render } from "react-dom";
 import Paper from "@material-ui/core/Paper";
 import IconButton from "@material-ui/core/IconButton";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
