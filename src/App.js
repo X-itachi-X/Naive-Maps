@@ -1,5 +1,6 @@
 import Geocoder from "react-map-gl-geocoder"
 import './App.css';
+import * as React from "react";
 
 const mapAccess = {
   mapboxApiAccessToken:
@@ -54,6 +55,14 @@ function _suggestionSelect(result, lat, long, text) {
 };
 
 function App() {
+  const [suggestion, setSuggestion] = React.useState({});
+  const [parsed, setParsed] = React.useState({});
+
+  const onSelected = (_, item) => {
+    const data = parseReverseGeo(item);
+    setParsed(data);
+    setSuggestion(item);
+  };
   return (
     <div className="App">
       <header className="header-parent">
@@ -74,14 +83,23 @@ function App() {
         <div className='body-content'>
           <div className='box'>
             <div className='emptyDiv'></div>
-            <form>
-            <input name="address" placeholder="Address" type="text" />
-            <input name="unit" placeholder="Unit number" type="text" />
-            <input name="city" placeholder="City" type="text" />
-            <input name="state" placeholder="State" type="text" />
-            <input name="country" placeholder="Country" type="text" />
-            <input name="postcode" placeholder="Postcode" type="text" />
-        </form>
+            <h1>Address autocomplete</h1>
+      <Geocoder
+        {...mapAccess}
+        onSelected={onSelected}
+        hideOnSelect={true}
+        viewport={{}}
+        initialInputValue={"500 Hay"}
+        queryParams={queryParams}
+      />
+      <pre>
+        <h3>Extract</h3>
+        {JSON.stringify(parsed, null, 2)}
+      </pre>
+      <pre>
+        <h3>Complete response</h3>
+        {JSON.stringify(suggestion, null, 2)}
+      </pre>
             {/* <form autocomplete="on">
               <input className='textBox' type="text" placeholder='Starting Point'></input>
               <br></br>
