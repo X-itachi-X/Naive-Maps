@@ -35,6 +35,7 @@ function App() {
                 <Route path="/city-location" element={<CityLocation />} />
               </Routes>
             </Router>
+            <Link to="/city-location">city</Link>
           </div>
         </div>
       </main>
