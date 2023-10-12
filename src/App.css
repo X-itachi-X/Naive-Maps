@@ -42,7 +42,7 @@
     transform: rotate(360deg);
   }
 }
-@media (min-width: 768px){
+
   .body-background{
     background-image: url("./bg.jpg");
   
@@ -51,15 +51,4 @@
   margin-top: -4rem;
   filter:blur(5rem)
   }
-}
 
-
-@media (max-width: 768px) {
-  .body-background{
-    background-image: url("./bg2.jpg");
-    margin-top: rem;
-   height: 50rem; 
-  width: 100vh;
-  
-  }
-}
