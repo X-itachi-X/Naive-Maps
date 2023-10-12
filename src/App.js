@@ -6,13 +6,14 @@ import CityLocation from './components/CityLocation';
 
 function App() {
   const [cityName1, setCityName1] = useState('');
-  const [getcityName1, setgetCityName1] = useState('');
+  const [long1, setlong1] = useState('');
   const [cityName2, setCityName2] = useState('');
   const [getcityName2, setgetCityName2] = useState('');
   const [latitude, setLatitude] = useState(null);
   const [longitude, setLongitude] = useState(null);
   const handleCityNameChange1 = (e) => {
     setCityName1(e.target.value);
+    setlong1(longitude);
   }
   const handleCityNameChange2 = (e) => {
     setCityName2(e.target.value);
@@ -85,7 +86,7 @@ getCityLocation(cityName)
                       onChange={handleCityNameChange1}>
                       
               </input>
-              <p>{getcityName1}</p>
+              <p>{long1}</p>
               <br></br>
               <input className='textBox' 
                      ype="text"
