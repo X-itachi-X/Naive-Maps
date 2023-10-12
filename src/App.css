@@ -20,7 +20,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
   filter:blur(2px);
-  box-shadow: 10px #61dafb;
+  box-shadow: 0 0 50px 10px #61dafb;
 }
 .header-content {
   position: relative;
