@@ -9,7 +9,7 @@ function App() {
   const [long1, setlong1] = useState('');
   const [lat1, setlat1] = useState('');
   const [cityName2, setCityName2] = useState('');
-  const [lon2, setlong2] = useState('');
+  const [long2, setlong2] = useState('');
   const [lat2, setlat2] = useState('');
   const [latitude, setLatitude] = useState(null);
   const [longitude, setLongitude] = useState(null);
@@ -116,7 +116,7 @@ getCityLocation(cityName1)
                      onChange={handleCityNameChange2}>
 
               </input>
-              <p>{}</p>
+              <p>{lat2},{long2}</p>
               <br></br>
               <input type="submit" value="Submit" class="bn632-hover bn23"></input>
             </form>
