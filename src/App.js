@@ -93,7 +93,7 @@ getCityLocation(cityName)
                       onChange={handleCityNameChange1}>
                       
               </input>
-              <p>{getCityLocation("patna")},{long1},{lat1}</p>
+              <p>{long1},{lat1}</p>
               <br></br>
               <input className='textBox' 
                      ype="text"
