@@ -9,10 +9,8 @@ function App() {
 
         </div>
         <div className="header-content">
-          <p>content 1</p>
-          <p>content 2</p>
-          <p>content 3</p>
-          <p>content 4</p>
+          <p>Home</p>
+          
         </div>
         
       </header>
