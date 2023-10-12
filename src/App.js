@@ -21,16 +21,7 @@ function App() {
 
         <div className='body-content'>
           <div className='box'>
-            <div class="col-12">
-              <input class="textbox-12" type="text" placeholder="First Name"></input>
-              <span class="focus-border-12"></span>
-            </div>
-            <br></br>
-            <br></br>
-            <div class="col-12">
-              <input class="textbox-12" type="text" placeholder="Last Name"></input>
-              <span class="focus-border-12"></span>
-            </div>
+            
             <a href="/"><button class="bn632-hover bn23">Button</button></a>
           </div>
         </div>
