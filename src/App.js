@@ -47,12 +47,13 @@ async function getCityLocation(cityName) {
     throw error;
   }
 }
-
+var l1;
 // Example usage:
 const cityName = 'New York'; // Replace with the city name you want to look up.
 getCityLocation(cityName)
   .then((location) => {
-    console.log('Location:', getCityLocation("abc"));
+    console.log('Location:', location);
+    var l1 = location;
   })
   .catch((error) => {
     console.error('Error:', error);
@@ -93,7 +94,7 @@ getCityLocation(cityName)
                       onChange={handleCityNameChange1}>
                       
               </input>
-              <p>{long1},{lat1}</p>
+              <p>{l1},{long1},{lat1}</p>
               <br></br>
               <input className='textBox' 
                      ype="text"
