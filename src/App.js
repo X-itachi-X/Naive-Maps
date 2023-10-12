@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import CityLocation from './CityLocation';
+import CityLocation from './components/CityLocation';
 
 function App() {
   return (
