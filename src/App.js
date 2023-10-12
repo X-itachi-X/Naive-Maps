@@ -38,7 +38,7 @@ function App() {
             
             <Link to="/city-location">city</Link>
               <Routes>
-                <Route path="/city-location" element={<CityLocation />} />
+                <Route path="/city-location" element={<CityLocation cityName={cityName}/>} />
               </Routes>
             
             
