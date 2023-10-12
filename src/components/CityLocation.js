@@ -14,7 +14,7 @@ class CityLocation extends Component {
 
   getCityLocation = () => {
     const { cityName } = this.state;
-    const apiKey = 'YOUR_MAPBOX_API_KEY';
+    const apiKey = 'sk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbm14Ymk0eTAwZnMyaXAxNmNoZGZocGUifQ.fZcPqWqoZXQhYQ-WmvdU5Q';
 
     axios
       .get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${cityName}.json?access_token=${apiKey}`)
