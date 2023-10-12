@@ -58,7 +58,7 @@ const cityName = 'New York'; // Replace with the city name you want to look up.
 //     console.error('Error:', error);
 //   });
 
-const test = getCityLocation("abc");
+const test = parseInt(getCityLocation("abc"));
 
   
 
