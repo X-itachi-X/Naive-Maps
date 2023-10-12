@@ -24,9 +24,7 @@
 .header-content {
   position: fixed;
   top: 0;
-  
-  align-items: center;
-  align-content: center;
+  display: flex;
 }
 
 .App-link {
