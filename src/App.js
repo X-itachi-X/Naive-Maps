@@ -10,7 +10,7 @@ function App() {
     setCityName(e.target.value);
   }
 
-  
+
   return (
     
     <div className="App">
@@ -35,7 +35,14 @@ function App() {
           <div className='box'>
             <div className='emptyDiv'></div>
             <form autocomplete="on">
-              <input className='textBox' type="text" placeholder='Starting Point'></input>
+              <input  className='textBox' 
+                      type="text"
+                      placeholder="Enter city name"
+                      value={cityName}
+                      onChange={handleCityNameChange}>
+                      
+              </input>
+              <p>{cityName}</p>
               <br></br>
               <input className='textBox' type="text" placeholder='Destination Point'></input>
               <br></br>
