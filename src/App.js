@@ -6,6 +6,10 @@ const mapAccess = {
     "pk.eyJ1Ijoiam9uc2VuIiwiYSI6IkR6UU9oMDQifQ.dymRIgqv-UV6oz0-HCFx1w"
 };
 
+function _suggestionSelect(result, lat, long, text) {
+  console.log(result, lat, long, text);
+};
+
 function App() {
   return (
     <div className="App">
