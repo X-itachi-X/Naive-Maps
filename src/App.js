@@ -42,7 +42,7 @@ async function getCityLocation(cityName) {
 const cityName = 'New York'; // Replace with the city name you want to look up.
 getCityLocation(cityName)
   .then((location) => {
-    console.log('Location:', location);
+    //console.log('Location:', location);
   })
   .catch((error) => {
     console.error('Error:', error);
