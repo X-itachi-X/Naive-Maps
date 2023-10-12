@@ -25,6 +25,7 @@ function App() {
             <form>
               <input className='textBox' type="text" placeholder='Starting Point'></input>
               <input className='textBox' type="text" placeholder='Destination Point'></input>
+              <input type="submit" value="Submit"></input>
             </form>
             
             <a href="/"><button class="bn632-hover bn23">Button</button></a>
