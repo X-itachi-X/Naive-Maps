@@ -6,7 +6,10 @@ import CityLocation from './components/CityLocation';
 function App() {
   const [cityName, setCityName] = useState('');
   return (
+    
     <div className="App">
+
+    <Router>
       <header className="header-parent">
         <div className="header-background">
 
@@ -32,16 +35,17 @@ function App() {
               <br></br>
               <input type="submit" value="Submit" class="bn632-hover bn23"></input>
             </form>
-            <Router>
+            
             <Link to="/city-location">city</Link>
               <Routes>
                 <Route path="/city-location" element={<CityLocation />} />
               </Routes>
-            </Router>
+            
             
           </div>
         </div>
       </main>
+      </Router>
     </div>
   );
 }
