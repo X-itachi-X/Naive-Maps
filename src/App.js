@@ -1,6 +1,7 @@
+import * as React from "react";
 import Geocoder from "react-map-gl-geocoder"
 import './App.css';
-import * as React from "react";
+
 
 const mapAccess = {
   mapboxApiAccessToken:
