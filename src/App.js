@@ -6,14 +6,16 @@ import CityLocation from './components/CityLocation';
 
 function App() {
   const [cityName1, setCityName1] = useState('');
+  const [getcityName1, setgetCityName1] = useState('');
   const [cityName2, setCityName2] = useState('');
+  const [getcityName2, setgetCityName2] = useState('');
   const [latitude, setLatitude] = useState(null);
   const [longitude, setLongitude] = useState(null);
   const handleCityNameChange1 = (e) => {
-    setCityName1(e.target.value);
+    setgetCityName1(longitude,latitude);
   }
   const handleCityNameChange2 = (e) => {
-    setCityName2(e.target.value);
+    setgetCityName2(e.target.value);
   }
 
 
