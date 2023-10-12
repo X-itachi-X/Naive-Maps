@@ -51,7 +51,7 @@ function App() {
                      ype="text"
                      placeholder="Enter city name"
                      value={cityName1}
-                     onChange={handleCityNameChange1}>
+                     onChange={handleCityNameChange2}>
 
               </input>
               <p>{cityName2}</p>
