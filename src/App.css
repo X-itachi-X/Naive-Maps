@@ -52,61 +52,45 @@
   border-radius: 1.2rem;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
-.bn29 {
-  border: none;
-  padding: 0.8em 2.5em;
-  outline: none;
-  color: white;
-  font-style: 1.2em;
-  position: relative;
-  z-index: 1;
+.btn41-43 {
+  padding: 10px 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
   cursor: pointer;
-  background: none;
-  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
 }
 
-.bn29:before,
-.bn29:after {
+.btn-42 {
+  border: 2px solid rgb(255, 255, 255);
+  z-index: 1;
+  color: white;
+}
+
+.btn-42:after {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 10em;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  width: 105%;
-  height: 105%;
   content: "";
-  z-index: -2;
-  background-size: 400% 400%;
-  background: linear-gradient(
-    60deg,
-    #f79533,
-    #f37055,
-    #ef4e7b,
-    #a166ab,
-    #5073b8,
-    #1098ad,
-    #07b39b,
-    #6fba82
-  );
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: rgb(255, 255, 255);
+  transition: all 0.3s ease;
 }
 
-.bn29:before {
-  -webkit-filter: blur(7px);
-  filter: blur(7px);
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-  -webkit-animation: pulse 10s infinite ease;
-  animation: pulse 10s infinite ease;
+.btn-42:hover {
+  color: rgb(0, 0, 0);
 }
 
-.bn29:after {
-  -webkit-filter: blur(0.3px);
-  filter: blur(0.3px);
+.btn-42:hover:after {
+  top: 0;
+  height: 100%;
 }
 
-.bn29:hover:before {
-  width: 115%;
-  height: 115%;
+.btn-42:active {
+  top: 2px;
 }
-
