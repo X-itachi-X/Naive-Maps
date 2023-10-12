@@ -24,8 +24,8 @@
 .header-content {
   position: fixed;
   
-  display:flex;
-  flex-direction: row; 
+  display: flex;
+  justify-content: flex-start;
   
 }
 
