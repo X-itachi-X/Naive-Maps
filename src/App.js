@@ -1,3 +1,4 @@
+import axios from 'axios';
 import './App.css';
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
@@ -14,7 +15,6 @@ function App() {
     setCityName2(e.target.value);
   }
 
-  const axios = require('axios'); // You may need to install the axios library.
 
 // Replace 'YOUR_MAPBOX_API_KEY' with your actual Mapbox API key.
 const MAPBOX_API_KEY = 'sk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbm14Ymk0eTAwZnMyaXAxNmNoZGZocGUifQ.fZcPqWqoZXQhYQ-WmvdU5Q';
