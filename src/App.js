@@ -3,7 +3,7 @@ import './App.css';
 const axios = require('axios'); // You may need to install the axios library.
 
 function getCityLocation(cityName) {
-  const apiKey = 'YOUR_MAPBOX_API_KEY';
+  const apiKey = 'pk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbmxxcWFsNjAyZ24yam4xanI1NDZ1NGoifQ.0meAZoM0gF_dSim2ZxrvJA';
 
   axios
     .get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${cityName}.json?access_token=${apiKey}`)
