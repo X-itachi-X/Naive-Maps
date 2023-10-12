@@ -30,8 +30,6 @@ function App() {
               <input type="submit" value="Submit" class="bn632-hover bn23"></input>
             </form>
             
-            <a href="/"><button class="bn632-hover bn23">Button</button></a>
-            
           </div>
         </div>
       </main>
