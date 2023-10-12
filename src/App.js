@@ -50,13 +50,13 @@ const MAPBOX_API_KEY = 'sk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbm14Ymk0eTAwZnMyaXAxN
 
 // Example usage:
 const cityName = 'New York'; // Replace with the city name you want to look up.
-getCityLocation(cityName)
-  .then((location) => {
-    console.log('Location:', location);
-  })
-  .catch((error) => {
-    console.error('Error:', error);
-  });
+// getCityLocation(cityName)
+//   .then((location) => {
+//     console.log('Location:', location);
+//   })
+//   .catch((error) => {
+//     console.error('Error:', error);
+//   });
 
   
 
