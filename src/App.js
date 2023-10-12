@@ -4,10 +4,13 @@ import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import CityLocation from './components/CityLocation';
 
 function App() {
-  const [cityName, setCityName] = useState('');
+  const [cityName1, setCityName1,cityName2, setCityName2] = useState('');
 
-  const handleCityNameChange = (e) => {
-    setCityName(e.target.value);
+  const handleCityNameChange1 = (e) => {
+    setCityName1(e.target.value);
+  }
+  const handleCityNameChange2 = (e) => {
+    setCityName2(e.target.value);
   }
 
 
@@ -38,13 +41,20 @@ function App() {
               <input  className='textBox' 
                       type="text"
                       placeholder="Enter city name"
-                      value={cityName}
-                      onChange={handleCityNameChange}>
+                      value={cityName1}
+                      onChange={handleCityNameChange1}>
                       
               </input>
-              <p>{cityName}</p>
+              <p>{cityName1}</p>
               <br></br>
-              <input className='textBox' type="text" placeholder='Destination Point'></input>
+              <input className='textBox' 
+                     ype="text"
+                     placeholder="Enter city name"
+                     value={cityName1}
+                     onChange={handleCityNameChange1}>
+
+              </input>
+              <p>{cityName2}</p>
               <br></br>
               <input type="submit" value="Submit" class="bn632-hover bn23"></input>
             </form>
