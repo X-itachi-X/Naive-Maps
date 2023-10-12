@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import CityLocation from './components/CityLocation';
 
 function App() {
-  const [cityName1, setCityName1,cityName2, setCityName2] = useState('');
+  const [cityName1, setCityName1] = useState('');
+  const [cityName2, setCityName2] = useState('');
 
   const handleCityNameChange1 = (e) => {
     setCityName1(e.target.value);
