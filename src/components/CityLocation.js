@@ -44,6 +44,7 @@ class CityLocation extends Component {
         <button onClick={this.getCityLocation}>Get Location</button>
         {this.state.latitude !== null && this.state.longitude !== null && (
           <div>
+            <p>name: {this.state.cityName}</p>
             <p>Latitude: {this.state.latitude}</p>
             <p>Longitude: {this.state.longitude}</p>
           </div>
