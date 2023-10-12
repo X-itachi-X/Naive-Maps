@@ -31,11 +31,12 @@ function App() {
               <input type="submit" value="Submit" class="bn632-hover bn23"></input>
             </form>
             <Router>
+            <Link to="/city-location">city</Link>
               <Routes>
                 <Route path="/city-location" element={<CityLocation />} />
               </Routes>
             </Router>
-            <Link to="/city-location">city</Link>
+            
           </div>
         </div>
       </main>
