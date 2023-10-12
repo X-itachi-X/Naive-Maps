@@ -20,6 +20,7 @@ function App() {
         <div className='body-background'></div>
         <div className='body-content'>
           <div className='box'>
+          <input></input>
           <a href="/"><button class="bn632-hover bn23">Button</button></a>
           </div>
         </div>
