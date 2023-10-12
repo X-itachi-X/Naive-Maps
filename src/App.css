@@ -49,6 +49,8 @@
   width: 65vh;
   height: 70vh;
   margin: 0 50px;
+  display: flex;
+  flex-direction: column;
   border-radius: 1.2rem;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
