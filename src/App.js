@@ -54,7 +54,7 @@ const cityName = 'New York'; // Replace with the city name you want to look up.
 getCityLocation(cityName1)
   .then((location) => {
     console.log('Start Location:', location);
-    setlat1()
+    setlat1(location[0])
   })
   .catch((error) => {
     console.error('Error:', error);
