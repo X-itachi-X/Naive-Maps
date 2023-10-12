@@ -9,7 +9,8 @@ function App() {
   const [long1, setlong1] = useState('');
   const [lat1, setlat1] = useState('');
   const [cityName2, setCityName2] = useState('');
-  const [getcityName2, setgetCityName2] = useState('');
+  const [lon2, setlong2] = useState('');
+  const [lat2, setlat2] = useState('');
   const [latitude, setLatitude] = useState(null);
   const [longitude, setLongitude] = useState(null);
   const handleCityNameChange1 = (e) => {
@@ -53,6 +54,7 @@ const cityName = 'New York'; // Replace with the city name you want to look up.
 getCityLocation(cityName1)
   .then((location) => {
     console.log('Start Location:', location);
+    setlat1()
   })
   .catch((error) => {
     console.error('Error:', error);
