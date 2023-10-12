@@ -91,7 +91,7 @@ const cityName = 'New York'; // Replace with the city name you want to look up.
                       onChange={handleCityNameChange1}>
                       
               </input>
-              <p>{JSON.stringify(getName)},{long1},{lat1}</p>
+              <p>{JSON.stringify(getCityLocation("patna"))},{long1},{lat1}</p>
               <br></br>
               <input className='textBox' 
                      ype="text"
