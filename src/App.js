@@ -1,4 +1,5 @@
 import * as React from "react";
+import { render } from "react-dom";
 import Geocoder from "react-map-gl-geocoder"
 import './App.css';
 
