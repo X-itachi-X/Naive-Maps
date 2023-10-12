@@ -45,5 +45,5 @@
 .body{
   background: rgb(103,0,209);
 background: radial-gradient(circle, rgba(103,0,209,1) 33%, rgba(0,0,0,1) 100%);
-height: match-parent;
+height: 100vh;
 }
