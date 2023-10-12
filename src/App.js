@@ -6,6 +6,11 @@ const mapAccess = {
     "pk.eyJ1Ijoiam9uc2VuIiwiYSI6IkR6UU9oMDQifQ.dymRIgqv-UV6oz0-HCFx1w"
 };
 
+const queryParams = {
+  country: "au",
+  types: "address"
+};
+
 function _suggestionSelect(result, lat, long, text) {
   console.log(result, lat, long, text);
 };
