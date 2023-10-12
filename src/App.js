@@ -37,7 +37,7 @@ async function getCityLocation(cityName) {
       setLongitude(location[0]);
       let Latitude = location[1];
       let Longitude = location[0]
-      return { Latitude, Longitude };
+      return location;
     } else {
       throw new Error('City not found or there was an error.');
     }
@@ -89,7 +89,7 @@ getCityLocation(cityName)
                       onChange={handleCityNameChange1}>
                       
               </input>
-              <p>{getCityLocation("abc")[1]},{long1},{lat1}</p>
+              <p>{getCityLocation("abc")},{long1},{lat1}</p>
               <br></br>
               <input className='textBox' 
                      ype="text"
