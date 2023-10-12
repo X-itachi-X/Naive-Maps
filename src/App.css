@@ -58,7 +58,6 @@
   .body-background{
     background-image: url("./bg.jpg");
     margin-top: rem;
-    scale: 0.1;
    height: 200vh; 
   width: 100vh;
   
