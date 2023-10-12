@@ -17,7 +17,7 @@ function App() {
   const axios = require('axios'); // You may need to install the axios library.
 
 // Replace 'YOUR_MAPBOX_API_KEY' with your actual Mapbox API key.
-const MAPBOX_API_KEY = 'YOUR_MAPBOX_API_KEY';
+const MAPBOX_API_KEY = 'sk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbm14Ymk0eTAwZnMyaXAxNmNoZGZocGUifQ.fZcPqWqoZXQhYQ-WmvdU5Q';
 
 async function getCityLocation(cityName) {
   try {
