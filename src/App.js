@@ -3,30 +3,37 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 
-function getCityLocation(cityName) {
-  const apiKey = 'pk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbmxxcWFsNjAyZ24yam4xanI1NDZ1NGoifQ.0meAZoM0gF_dSim2ZxrvJA';
+class CityLocation extends Component {
+  state = {
+    cityName: '',
+    latitude: null,
+    longitude: null,
+  };
 
-  axios
-    .get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${cityName}.json?access_token=${apiKey}`)
-    .then((response) => {
-      if (response.data.features.length > 0) {
-        const location = response.data.features[0].center;
-        const latitude = location[1];
-        const longitude = location[0];
-        console.log(`Latitude: ${latitude}`);
-        console.log(`Longitude: ${longitude}`);
-      } else {
-        console.error('City not found or there was an error.');
-      }
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-    });
-}
+  handleChange = (e) => {
+    this.setState({ cityName: e.target.value });
+  };
 
-// Example usage:
-const cityName = 'New York'; // Replace with the city name you want to look up.
-getCityLocation(cityName);
+  getCityLocation = () => {
+    const { cityName } = this.state;
+    const apiKey = 'YOUR_MAPBOX_API_KEY';
+
+    axios
+      .get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${cityName}.json?access_token=${apiKey}`)
+      .then((response) => {
+        if (response.data.features.length > 0) {
+          const location = response.data.features[0].center;
+          this.setState({ latitude: location[1], longitude: location[0] });
+        } else {
+          alert('City not found or there was an error.');
+        }
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  };
+
+
 
 function App() {
   return (
