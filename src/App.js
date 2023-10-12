@@ -1,8 +1,6 @@
 import axios from 'axios';
 import './App.css';
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import CityLocation from './components/CityLocation';
 
 function App() {
   const [cityName1, setCityName1] = useState('');
