@@ -41,6 +41,7 @@
 .body-content{
   position: relative;
   top: -90vh;
+  display: flex;
   justify-content: center;
 }
 
