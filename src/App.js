@@ -23,8 +23,10 @@ function App() {
           <div className='box'>
             <div className='emptyDiv'></div>
             <form>
-              <input className='textBox' type="text" placeholder='Starting Point'></input><br></br>
+              <input className='textBox' type="text" placeholder='Starting Point'></input>
+              <br></br>
               <input className='textBox' type="text" placeholder='Destination Point'></input>
+              <br></br>
               <input type="submit" value="Submit"></input>
             </form>
             
