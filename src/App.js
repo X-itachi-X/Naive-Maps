@@ -1,5 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Home from './Home';
 import CityLocation from './components/CityLocation';
 
 function App() {
@@ -30,7 +31,12 @@ function App() {
               <br></br>
               <input type="submit" value="Submit" class="bn632-hover bn23"></input>
             </form>
-            
+            <Router>
+              
+                <Route path="/" element={<Home />} />
+                <Route path="/city-location" element={<CityLocation />} />
+              
+            </Router>
           </div>
         </div>
       </main>
