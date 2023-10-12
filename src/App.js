@@ -27,7 +27,7 @@ const MAPBOX_API_KEY = 'sk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbm14Ymk0eTAwZnMyaXAxN
 
  async function getCityLocation(cityName) {
   try {
-    const response =  axios.get(
+    const response =  await axios.get(
       `https://api.mapbox.com/geocoding/v5/mapbox.places/${cityName}.json?access_token=${MAPBOX_API_KEY}`
     );
 
