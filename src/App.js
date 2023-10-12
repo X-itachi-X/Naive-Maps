@@ -35,8 +35,9 @@ async function getCityLocation(cityName) {
       const location = response.data.features[0].center;
       setLatitude(location[1]);
       setLongitude(location[0]);
-      
-      return { latitude, longitude };
+      let Latitude = location[1];
+      let Longitude = location[0]
+      return { Latitude, Longitude };
     } else {
       throw new Error('City not found or there was an error.');
     }
