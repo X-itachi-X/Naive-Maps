@@ -111,7 +111,7 @@ getCityLocation(cityName1)
                      onChange={handleCityNameChange2}>
 
               </input>
-              <p>{cityName2}</p>
+              <p>{}</p>
               <br></br>
               <input type="submit" value="Submit" class="bn632-hover bn23"></input>
             </form>
