@@ -21,9 +21,11 @@ function App() {
 
         <div className='body-content'>
           <div className='box'>
+            <div className='emptyDiv'></div>
             <input className='textBox' type="text" placeholder='Starting Point'></input>
             <input className='textBox' type="text" placeholder='Destination Point'></input>
             <a href="/"><button class="bn632-hover bn23">Button</button></a>
+            <div className='emptyDiv'></div>
           </div>
         </div>
       </main>
