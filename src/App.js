@@ -45,7 +45,7 @@ function App() {
         <hr />
 
         <Route exact path="/" render={() => <div>Home Page</div>} />
-        <Route path="/city-location" component={CityLocation} />
+        <Route path="./components/CityLocation.js" component={CityLocation} />
       </div>
     </Router>
           </div>
