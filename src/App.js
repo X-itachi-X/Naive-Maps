@@ -22,7 +22,7 @@ function App() {
         <div className='body-content'>
           <div className='box'>
             <div className='emptyDiv'></div>
-            <form>
+            <form autocomplete="on">
               <input className='textBox' type="text" placeholder='Starting Point'></input>
               <br></br>
               <input className='textBox' type="text" placeholder='Destination Point'></input>
