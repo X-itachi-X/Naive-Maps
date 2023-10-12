@@ -25,6 +25,10 @@
   color: white;
   filter:blur(2px)
 }
+.header-content {
+  position: fixed;
+  top: 0;
+}
 
 .App-link {
   color: #61dafb;
