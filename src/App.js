@@ -36,8 +36,10 @@ async function getCityLocation(cityName) {
       setLatitude(location[1]);
       setLongitude(location[0]);
       let Latitude = location[1];
-      let Longitude = location[0]
-      return {Latitude,Longitude};
+      let Longitude = location[0];
+      let arr = [Longitude,Latitude];
+
+      return arr;
     } else {
       throw new Error('City not found or there was an error.');
     }
