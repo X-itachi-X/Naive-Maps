@@ -1,6 +1,5 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import Home from './App';
 import CityLocation from './components/CityLocation';
 
 function App() {
