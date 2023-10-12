@@ -41,6 +41,7 @@
 .body-content{
   position: relative;
   top: -90vh;
+  justify-content: center;
 }
 
 .box{
