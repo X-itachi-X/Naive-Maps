@@ -1,4 +1,4 @@
-
+import Geocoder from "react-map-gl-geocoder"
 import './App.css';
 
 const mapAccess = {
