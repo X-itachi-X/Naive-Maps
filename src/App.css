@@ -98,28 +98,3 @@
   box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
 }
 
-.textbox-12 {
-	border: 0;
-	padding: 2px 0;
-	border-bottom: 1px solid #ccc;
-	font-size: 14px;
-	color: #333;
-	width: 275px;
-	box-sizing: border-box;
-	letter-spacing: 1px;
-	outline: none;
-}
-.textbox-12 ~ .focus-border-12 {
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	width: 0;
-	height: 2px;
-	background-color: #009688;
-	transition: 0.4s;
-}
-.textbox-12:focus ~ .focus-border-12 {
-	width: 100%;
-	transition: 0.4s;
-	left: 0;
-}
