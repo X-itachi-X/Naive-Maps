@@ -1,6 +1,7 @@
 import './App.css';
+import React, { Component } from 'react';
+import axios from 'axios';
 
-const axios = require('axios'); // You may need to install the axios library.
 
 function getCityLocation(cityName) {
   const apiKey = 'pk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbmxxcWFsNjAyZ24yam4xanI1NDZ1NGoifQ.0meAZoM0gF_dSim2ZxrvJA';
