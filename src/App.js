@@ -21,7 +21,7 @@ function App() {
 
         <div className='body-content'>
           <div className='box'>
-            <input className='textBox' type></input>
+            <input className='textBox' type="text"></input>
             <a href="/"><button class="bn632-hover bn23">Button</button></a>
           </div>
         </div>
