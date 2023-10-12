@@ -5,6 +5,12 @@ import CityLocation from './components/CityLocation';
 
 function App() {
   const [cityName, setCityName] = useState('');
+
+  const handleCityNameChange = (e) => {
+    setCityName(e.target.value);
+  }
+
+  
   return (
     
     <div className="App">
