@@ -17,12 +17,10 @@ function App() {
         
       </header>
       <main className='body-parent'>
-        <div className='body-background'>
-
-        </div>
+        <div className='body-background'></div>
         <div className='body-content'>
           <div className='box'>
-
+          <a href="/"><button class="bn29">Button</button></a>
           </div>
         </div>
       </main>
