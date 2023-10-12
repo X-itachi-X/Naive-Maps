@@ -9,7 +9,7 @@ function App() {
 
         </div>
         <div className="header-content">
-          
+          content
         </div>
         
       </header>
