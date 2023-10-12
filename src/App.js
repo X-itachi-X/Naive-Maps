@@ -1,8 +1,10 @@
 import './App.css';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import CityLocation from './components/CityLocation';
 
 function App() {
+  const [cityName, setCityName] = useState('');
   return (
     <div className="App">
       <header className="header-parent">
