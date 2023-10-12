@@ -33,9 +33,8 @@ function App() {
             </form>
             <Router>
               <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="./components/CityLocation.js" element={<CityLocation />} />
-                </Routes>
+                <Route path="/city-location" element={<CityLocation />} />
+              </Routes>
             </Router>
           </div>
         </div>
