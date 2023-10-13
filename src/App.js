@@ -76,7 +76,7 @@ getCityLocation(cityName1)
   return (
     
     <div className="App">
-
+ <Router>
       
       <header className="header-parent">
         <div className="header-background">
@@ -116,21 +116,21 @@ getCityLocation(cityName1)
               <p>{lat2},{long2}</p>
               <input type="submit" value="Submit" class="bn632-hover bn23"></input>
             </form>
-            <Router>
-              <Link to="/map">View Map</Link>
+           
+            <Link to="/map">View Map</Link>
               
                 <Routes>
                    
                     <Route path="/map" element={<MapView />} />
                 </Routes>
-              </Router>
+              
             
             
             
           </div>
         </div>
       </main>
-    
+      </Router>
     </div>
   );
 }
