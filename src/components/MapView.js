@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactMapboxGl from 'react-map-gl';
-import 'map-gl/dist/map-gl.css';
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 const Map = ReactMapboxGl({
   accessToken: 'YOUR_MAPBOX_ACCESS_TOKEN',
