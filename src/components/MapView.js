@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactMapboxGl from 'react-mapbox-gl';
+import ReactMapboxGl from 'react-map-gl';
 
 const Map = () => {
   const Mapbox = ReactMapboxGl({
