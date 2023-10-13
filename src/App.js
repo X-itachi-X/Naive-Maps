@@ -117,12 +117,7 @@ getCityLocation(cityName1)
               <br></br>
               <input type="submit" value="Submit" class="bn632-hover bn23"></input>
             </form>
-            <Router>
-              <Link to="/map">View Map</Link>
-              
-                <Route path="/" exact component={Home} />
-                <Route path="/map" component={MapView} />
-              </Router>
+            
             
             
             
