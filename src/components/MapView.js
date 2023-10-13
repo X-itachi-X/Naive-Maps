@@ -19,7 +19,7 @@ const Map = () => {
     };
   }, [mapboxToken]);
 
-  return <div id="map-container" style={{ width: '100%', height: '200px' }} />;
+  return <div id="map-container" style={{ width: '100%', height: '300px' }} />;
 };
 
 export default Map;
