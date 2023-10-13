@@ -14,7 +14,7 @@ function Map() {
   return (
     <ReactMapGL
       {...viewport}
-      mapboxApiAccessToken="sk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbm14Ymk0eTAwZnMyaXAxNmNoZGZocGUifQ.fZcPqWqoZXQhYQ-WmvdU5Q" // Replace with your actual token
+      mapboxApiAccessToken="sk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbm80YXVxcTBkaGsyam9kMThhZnp6eGMifQ.o_6GwvacW6sgzSlW9PLx8w" // Replace with your actual token
       onViewportChange={(newViewport) => setViewport(newViewport)}
       mapStyle="mapbox://styles/ravisumit/clniqg1y600cc01o0fdf77fqt"
        // You can choose a different map style
