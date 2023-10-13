@@ -1,6 +1,7 @@
 import axios from 'axios';
 import './App.css';
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   const [cityName1, setCityName1] = useState('');
@@ -113,7 +114,12 @@ getCityLocation(cityName1)
               <br></br>
               <input type="submit" value="Submit" class="bn632-hover bn23"></input>
             </form>
-            
+            <Router>
+              <Switch>
+                <Route path="/" exact component={Home} /> {/* Add a route to your home page if you have one */}
+                <Route path="/map" component={MapView} /> {/* Route to MapView component */}
+              </Switch>
+            </Router>
             
             
             
