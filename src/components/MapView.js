@@ -12,7 +12,7 @@ const Map = () => {
   return (
     <ReactMapGL
       {...initialViewport}
-      mapboxApiAccessToken={mapboxToken}
+      mapboxApiAccessToken='sk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbm14Ymk0eTAwZnMyaXAxNmNoZGZocGUifQ.fZcPqWqoZXQhYQ-WmvdU5Q'
       width="100%"
       height="400px"
       
