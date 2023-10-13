@@ -1,7 +1,7 @@
 import axios from 'axios';
 import './App.css';
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import MapView from './components'; // Import your MapView component here
 import Home from './'; // Import your Home component here if you have one
 
@@ -117,6 +117,7 @@ getCityLocation(cityName1)
               <input type="submit" value="Submit" class="bn632-hover bn23"></input>
             </form>
             <Router>
+              <Link to="/map">View Map</Link>
               <Switch>
                 <Route path="/" exact component={Home} /> {/* Add a route to your home page if you have one */}
                 <Route path="/map" component={MapView} /> {/* Route to MapView component */}
