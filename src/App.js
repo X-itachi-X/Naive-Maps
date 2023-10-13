@@ -121,8 +121,8 @@ getCityLocation(cityName1)
               <Link to="/map">View Map</Link>
               <Link to="/">Home</Link>
                 <Routes>
-                    <Route path="/" exact component={<Home />} />
-                    <Route path="/map" exact component={<MapView />} />
+                    <Route path="/"  component={<Home />} />
+                    <Route path="/map" component={<MapView />} />
                 </Routes>
               </Router>
             
