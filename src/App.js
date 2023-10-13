@@ -106,7 +106,6 @@ getCityLocation(cityName1)
                       
               </input>
               <p>{lat1},{long1}</p>
-              <br></br>
               <input className='textBox' 
                      ype="text"
                      placeholder="Enter city name"
@@ -115,7 +114,6 @@ getCityLocation(cityName1)
 
               </input>
               <p>{lat2},{long2}</p>
-              <br></br>
               <input type="submit" value="Submit" class="bn632-hover bn23"></input>
             </form>
             <Router>
