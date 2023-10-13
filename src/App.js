@@ -122,6 +122,7 @@ getCityLocation(cityName1)
               <Routes>
                 <Route path="/" exact component={Home} />
                 <Route path="/map" component={MapView} />
+                <Route component={MapView} />
                 </Routes>
               </Router>
             
