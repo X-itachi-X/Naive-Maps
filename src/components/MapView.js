@@ -13,7 +13,7 @@ function Map() {
   return (
     <ReactMapGL
       {...viewport}
-      mapboxApiAccessToken="YOUR_MAPBOX_ACCESS_TOKEN"
+      mapboxApiAccessToken="sk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbm14Ymk0eTAwZnMyaXAxNmNoZGZocGUifQ.fZcPqWqoZXQhYQ-WmvdU5Q"
       onViewportChange={(newViewport) => setViewport(newViewport)}
       mapStyle="mapbox://styles/mapbox/streets-v11" // You can choose a different map style
     />
