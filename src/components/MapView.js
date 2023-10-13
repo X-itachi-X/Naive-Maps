@@ -16,7 +16,8 @@ function Map() {
       {...viewport}
       mapboxApiAccessToken="sk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbm14Ymk0eTAwZnMyaXAxNmNoZGZocGUifQ.fZcPqWqoZXQhYQ-WmvdU5Q" // Replace with your actual token
       onViewportChange={(newViewport) => setViewport(newViewport)}
-      mapStyle="mapbox://styles/mapbox/streets-v11" // You can choose a different map style
+      mapStyle="mapbox://styles/mapbox/standard-beta"
+       // You can choose a different map style
     />
   );
 }
