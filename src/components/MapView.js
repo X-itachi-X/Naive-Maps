@@ -9,7 +9,7 @@ const Map = () => {
 
     const map = new mapboxgl.Map({
       container: 'map-container', // The container ID where the map will be rendered
-      style: 'mapbox://styles/mapbox/streets-v11', // You can choose a different map style
+      style: 'mapbox://styles/ravisumit/clnipt7wy03yf01qu2iljfl8g', // You can choose a different map style
       center: [-74.006, 40.7128], // Centered on New York City
       zoom: 10, // Zoom level
     });
