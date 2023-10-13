@@ -96,7 +96,9 @@ getCityLocation(cityName1)
         <div className='body-content'>
           <div className='box'>
             <div className='emptyDiv'></div>
-            <form autocomplete="on">
+            <MapView />
+
+            <form>
               <input  className='textBox' 
                       type="text"
                       placeholder="Enter city name"
@@ -126,7 +128,7 @@ getCityLocation(cityName1)
                 </Routes>
               </Router>
             
-            <MapView />
+            
             
           </div>
         </div>
