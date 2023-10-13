@@ -1,44 +1,28 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
+import ReactMapboxGl from 'react-mapbox-gl';
+import 'mapbox-gl/dist/mapbox-gl.css';
 
-function CityLocation({ cityName }) {
-  const [latitude, setLatitude] = useState(null);
-  const [longitude, setLongitude] = useState(null);
+const Map = ReactMapboxGl({
+  accessToken: 'YOUR_MAPBOX_ACCESS_TOKEN',
+});
 
-  useEffect(() => {
-    const getCityLocation = async () => {
-      const apiKey = 'sk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbm14Ymk0eTAwZnMyaXAxNmNoZGZocGUifQ.fZcPqWqoZXQhYQ-WmvdU5Q'; // Replace with your Mapbox API key
-      try {
-        const response = await axios.get(
-          `https://api.mapbox.com/geocoding/v5/mapbox.places/${cityName}.json?access_token=${apiKey}`
-        );
-        if (response.data.features.length > 0) {
-          const location = response.data.features[0].center;
-          setLatitude(location[1]);
-          setLongitude(location[0]);
-        }
-      } catch (error) {
-        console.error('Error:', error);
-      }
-    };
-
-    if (cityName) {
-      getCityLocation();
-    }
-  }, [cityName]);
+const MapboxMap = () => {
+  const mapContainerStyle = {
+    height: '400px',
+    width: '100%',
+  };
 
   return (
     <div>
-      <h1>City Location Finder</h1>
-      <p>City Name: {cityName}</p>
-      {latitude !== null && longitude !== null && (
-        <div>
-          <p>Latitude: {latitude}</p>
-          <p>Longitude: {longitude}</p>
-        </div>
-      )}
+      <h1>Mapbox Map</h1>
+      <Map
+        style="mapbox://styles/mapbox/streets-v11"
+        containerStyle={mapContainerStyle} // Use the mapContainerStyle object here
+      >
+        <div>Custom Map Content</div>
+      </Map>
     </div>
   );
-}
+};
 
-export default CityLocation;
+export default MapboxMap;
