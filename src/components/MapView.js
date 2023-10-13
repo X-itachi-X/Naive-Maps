@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactMapboxGl from 'react-mapbox-gl';
+import ReactMapboxGl from '@react-mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 const Map = ReactMapboxGl({
