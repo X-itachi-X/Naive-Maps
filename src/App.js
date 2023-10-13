@@ -3,7 +3,7 @@ import './App.css';
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import MapView from './components/MapView'; // Import your MapView component here
-import Home from './'; // Import your Home component here if you have one
+import Home from './App'; // Import your Home component here if you have one
 
 function App() {
   const [cityName1, setCityName1] = useState('');
