@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ReactMapGL from 'react-map-gl';
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 function Map() {
   const [viewport, setViewport] = useState({
