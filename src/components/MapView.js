@@ -1,22 +1,21 @@
 import React from 'react';
-import ReactMapboxGl from 'react-map-gl';
+import ReactMapGL from 'react-map-gl';
 
 const Map = () => {
-  const Mapbox = ReactMapboxGl({
-    accessToken: 'sk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbm14Ymk0eTAwZnMyaXAxNmNoZGZocGUifQ.fZcPqWqoZXQhYQ-WmvdU5Q',
-  });
+  const mapboxToken = 'sk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbm14Ymk0eTAwZnMyaXAxNmNoZGZocGUifQ.fZcPqWqoZXQhYQ-WmvdU5Q';
+  const initialViewport = {
+    latitude: 40.7128, // Latitude of New York City
+    longitude: -74.0060, // Longitude of New York City
+    zoom: 10, // Zoom level
+  };
 
   return (
-    <div style={{ width: '100%', height: '400px' }}>
-      <Mapbox
-        style="mapbox://styles/mapbox/streets-v11" // Map style
-        center={[-74.006, 40.7128]} // Centered on New York City
-        containerStyle={{
-          height: '100%',
-          width: '100%',
-        }}
-      />
-    </div>
+    <ReactMapGL
+      {...initialViewport}
+      width="100%"
+      height="400px"
+      mapboxApiAccessToken={mapboxToken}
+    />
   );
 };
 
