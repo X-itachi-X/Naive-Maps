@@ -7,13 +7,17 @@ const Map = ReactMapboxGl({
 });
 
 const MapboxMap = () => {
+  const mapContainerStyle = {
+    height: '400px',
+    width: '100%',
+  };
+
   return (
     <div>
       <h1>Mapbox Map</h1>
       <Map
         style="mapbox://styles/mapbox/streets-v11"
-        containerStyle={mapContainerStyle}
-        }
+        containerStyle={mapContainerStyle} // Use the mapContainerStyle object here
       >
         <div>Custom Map Content</div>
       </Map>
