@@ -1,22 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactMapGL from 'react-map-gl';
+import 'mapbox-gl/dist/mapbox-gl.css';
 
-const Map = () => {
-  const mapboxToken = 'sk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbm14Ymk0eTAwZnMyaXAxNmNoZGZocGUifQ.fZcPqWqoZXQhYQ-WmvdU5Q';
-  const initialViewport = {
-    latitude: 40.7128, // Latitude of New York City
-    longitude: -74.0060, // Longitude of New York City
-    zoom: 10, // Zoom level
-  };
+function Map() {
+  const [viewport, setViewport] = useState({
+    width: '100%',
+    height: '100%',
+    latitude: 37.7749, // Latitude of your desired location
+    longitude: -122.4194, // Longitude of your desired location
+    zoom: 10, // Zoom level (adjust as needed)
+  });
 
   return (
     <ReactMapGL
-      {...initialViewport}
-      width="100%"
-      height="400px"
-      mapboxApiAccessToken={mapboxToken}
+      {...viewport}
+      mapboxApiAccessToken="sk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbm14Ymk0eTAwZnMyaXAxNmNoZGZocGUifQ.fZcPqWqoZXQhYQ-WmvdU5Q"
+      onViewportChange={(newViewport) => setViewport(newViewport)}
+      mapStyle="mapbox://styles/mapbox/streets-v11" // You can choose a different map style
     />
   );
-};
+}
 
 export default Map;
