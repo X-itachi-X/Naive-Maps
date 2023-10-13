@@ -1,7 +1,7 @@
 import axios from 'axios';
 import './App.css';
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import MapView from './components/MapView'; // Import your MapView component here
 import Home from './'; // Import your Home component here if you have one
 
