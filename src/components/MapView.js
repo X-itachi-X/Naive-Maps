@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ReactMapGL from 'react-map-gl';
+import ReactMapGL from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 function Map() {
