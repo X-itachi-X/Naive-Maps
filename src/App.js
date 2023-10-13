@@ -119,9 +119,9 @@ getCityLocation(cityName1)
             </form>
             <Router>
               <Link to="/map">View Map</Link>
-              <Routes>
-              <Route path="/" exact component={<Home />} />
-        <Route path="/map" exact component={<MapView />} />
+                <Routes>
+                    <Route path="/" exact component={<Home />} />
+                    <Route path="/map" exact component={<MapView />} />
                 </Routes>
               </Router>
             
