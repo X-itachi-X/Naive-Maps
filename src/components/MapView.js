@@ -12,10 +12,8 @@ const MapboxMap = () => {
       <h1>Mapbox Map</h1>
       <Map
         style="mapbox://styles/mapbox/streets-v11"
-        containerStyle={{
-          height: '400px',
-          width: '100%',
-        }}
+        containerStyle={mapContainerStyle}
+        }
       >
         <div>Custom Map Content</div>
       </Map>
