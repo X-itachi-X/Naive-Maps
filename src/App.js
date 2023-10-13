@@ -126,7 +126,7 @@ getCityLocation(cityName1)
                 </Routes>
               </Router>
             
-            
+            <MapView />
             
           </div>
         </div>
