@@ -95,7 +95,7 @@ getCityLocation(cityName1)
 
         <div className='body-content'>
           <div className='box'>
-            <div className='emptyDiv'></div>
+            
 
             <form>
               <input  className='textBox' 
