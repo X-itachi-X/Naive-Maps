@@ -4,8 +4,8 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 
 function Map() {
   const [viewport, setViewport] = useState({
-    width: '100%',
-    height: '100%',
+    width: '100px',
+    height: '100px',
     latitude: 37.7749, // Latitude of your desired location
     longitude: -122.4194, // Longitude of your desired location
     zoom: 10, // Zoom level (adjust as needed)
