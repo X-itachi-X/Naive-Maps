@@ -1,25 +1,25 @@
-import React, { useState } from 'react';
-import ReactMapGL from 'mapbox-gl';
-import 'mapbox-gl/dist/mapbox-gl.css';
+import React, { useEffect } from 'react';
+import mapboxgl from 'mapbox-gl';
 
-function Map() {
-  const [viewport, setViewport] = useState({
-    width: '100px',
-    height: '100px',
-    latitude: 37.7749, // Latitude of your desired location
-    longitude: -122.4194, // Longitude of your desired location
-    zoom: 10, // Zoom level (adjust as needed)
-  });
+const Map = () => {
+  const mapboxToken = 'YOUR_MAPBOX_ACCESS_TOKEN'; // Replace with your actual token
 
-  return (
-    <ReactMapGL
-      {...viewport}
-      mapboxApiAccessToken="sk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbm80YXVxcTBkaGsyam9kMThhZnp6eGMifQ.o_6GwvacW6sgzSlW9PLx8w" // Replace with your actual token
-      onViewportChange={(newViewport) => setViewport(newViewport)}
-      mapStyle="mapbox://styles/ravisumit/clniqg1y600cc01o0fdf77fqt"
-       // You can choose a different map style
-    />
-  );
-}
+  useEffect(() => {
+    mapboxgl.accessToken = mapboxToken;
+
+    const map = new mapboxgl.Map({
+      container: 'map-container', // The container ID where the map will be rendered
+      style: 'mapbox://styles/mapbox/streets-v11', // You can choose a different map style
+      center: [-74.006, 40.7128], // Centered on New York City
+      zoom: 10, // Zoom level
+    });
+
+    return () => {
+      map.remove(); // Clean up when the component is unmounted
+    };
+  }, [mapboxToken]);
+
+  return <div id="map-container" style={{ width: '100%', height: '400px' }} />;
+};
 
 export default Map;
