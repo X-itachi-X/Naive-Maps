@@ -48,7 +48,7 @@
 .box{
   width: 90vw;
   height: auto;
-  margin: 0 50px;
+  margin: 0 ;
   display: flex;
   flex-direction: column;
   padding: 1rem;
