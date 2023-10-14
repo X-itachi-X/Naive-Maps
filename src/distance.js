@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
 
-function Distance() {
+function Distance(lat1,long1,lat2,long2) {
   const [locations, setLocations] = useState([
     {
       name: 'Location 1',
-      latitude: -74.0060, // Replace with the first location's longitude
-      longitude: 40.7128, // Replace with the first location's latitude
+      latitude: lat1, // Replace with the first location's longitude
+      longitude: long1, // Replace with the first location's latitude
     },
     {
       name: 'Location 2',
-      latitude: -80.2437, // Replace with the second location's longitude
-      longitude: 34.0522, // Replace with the second location's latitude
+      latitude: lat2, // Replace with the second location's longitude
+      longitude: long2, // Replace with the second location's latitude
     },
   ]);
 
