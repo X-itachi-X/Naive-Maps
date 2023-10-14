@@ -42,7 +42,7 @@ function Distance({lat1,long1,lat2,long2}) {
       container: 'map',
       style: 'mapbox://styles/ravisumit/clnipt7wy03yf01qu2iljfl8g',
       center: [locations[0].longitude, locations[0].latitude], // Use the first location
-      zoom: 2, // Adjust the zoom level as needed
+      zoom: 12, // Adjust the zoom level as needed
     });
 
     // Create markers for locations
