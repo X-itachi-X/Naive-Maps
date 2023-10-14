@@ -3,7 +3,7 @@ import './App.css';
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import MapView from './components/MapView'; // Import your MapView component here
-import FormView from './Form'
+
 
 
 
@@ -88,7 +88,7 @@ getCityLocation(cityName1)
         <div className="header-content">
         
           
-          <Link to="/Naive-Maps/form"><p>Home</p></Link>
+          <Link to="/Naive-Maps"><p>Home</p></Link>
           <Link to="/Naive-Maps/map"><p>View Map</p></Link>    
               
           
@@ -102,7 +102,7 @@ getCityLocation(cityName1)
         <div className='body-content'>
           <div className='box'>
           <div>
-      {window.location.pathname === '/Naive-Maps/form' ? (
+      {window.location.pathname === '/Naive-Maps' ? (
         <form>
         <input  className='textBox' 
                 type="text"
@@ -123,15 +123,15 @@ getCityLocation(cityName1)
         <Link to="/Naive-Maps/map"><input type="submit" value="Submit" className="bn632-hover bn23" ></input></Link>
       </form>
       ) : (
-        <h2>map</h2>
+        <Routes>
+                    
+                    <Route path="/Naive-Maps/map" element={<MapView lat={lat1} long={long1}/>} />
+                </Routes> 
       )}
     </div>
 
                
-                 <Routes>
-                    <Route path="/Naive-Maps/form" element={<FormView />} />
-                    <Route path="/Naive-Maps/map" element={<MapView lat={lat1} long={long1}/>} />
-                </Routes>      
+                      
             
         </div>
         </div>
