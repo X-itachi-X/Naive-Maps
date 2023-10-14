@@ -77,15 +77,21 @@ getCityLocation(cityName1)
   return (
     
     <div className="App">
- <Router>
+ 
       
       <header className="header-parent">
         <div className="header-background">
 
         </div>
         <div className="header-content">
+        <Router>
           <p>Home</p>
-        
+          <Link to="/Naive-Maps/">Home</Link>
+              
+              <Routes>
+                  <Route path="/Naive-Maps/" element={<Home />} />
+              </Routes>
+        </Router>
           <p>content 3</p>
           <p>content 4</p>
         </div>
@@ -117,24 +123,20 @@ getCityLocation(cityName1)
               <p>{lat2},{long2}</p>
               <input type="submit" value="Submit" class="bn632-hover bn23"></input>
             </form>
-           
+            <Router>
             <Link to="/Naive-Maps/map">View Map</Link>
-            <Link to="/Naive-Maps/">Home</Link>
-              
-                <Routes>
-                    <Route path="/Naive-Maps/" element={<Home />} />
-                </Routes>
+            
                 <Routes>
                     <Route path="/Naive-Maps/map" element={<MapView />} />
                 </Routes>
-              
+             </Router>
             
             
             
           </div>
         </div>
       </main>
-      </Router>
+      
     </div>
   );
 }
