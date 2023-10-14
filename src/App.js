@@ -87,10 +87,10 @@ getCityLocation(cityName1)
         
           
           <Link to="/Naive-Maps"><p>Home</p></Link>
+          <Link to="/Naive-Maps/map"><p>View Map</p></Link>    
               
-              
+          
           <p>content 3</p>
-          <p>content 4</p>
         </div>
         
       </header>
@@ -121,7 +121,7 @@ getCityLocation(cityName1)
               <input type="submit" value="Submit" className="bn632-hover bn23"></input>
             </form>
            
-            <Link to="/Naive-Maps/map">View Map</Link>
+            
             
                 <Routes>
                     <Route path="/Naive-Maps"  />
