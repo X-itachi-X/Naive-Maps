@@ -122,7 +122,7 @@ getCityLocation(cityName1)
             </form>   
                  <Routes>
                     <Route path="/Naive-Maps"  />
-                    <Route path="/Naive-Maps/map" element={<MapView />} />
+                    <Route path="/Naive-Maps/map" element={<MapView lat={lat1} long={long1}/>} />
                 </Routes>      
             
         </div>
