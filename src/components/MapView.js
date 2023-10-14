@@ -15,9 +15,9 @@ const Map = () => {
       zoom: 10, // Zoom level
     });
 
-    return () => {
-      map.remove(); // Clean up when the component is unmounted
-    };
+    // return () => {
+    //   map.remove(); // Clean up when the component is unmounted
+    // };
   }, [mapboxToken]);
 
   return (
