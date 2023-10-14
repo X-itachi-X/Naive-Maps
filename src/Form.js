@@ -6,7 +6,7 @@ import MapView from './components/MapView';
 import { Link } from 'react-router-dom';
 
 function HomePage() {
-    const [cityName1, setCityName1] = useState('');
+  const [cityName1, setCityName1] = useState('');
   const [long1, setlong1] = useState(25.5941);
   const [lat1, setlat1] = useState(85.1376);
   const [cityName2, setCityName2] = useState('');
