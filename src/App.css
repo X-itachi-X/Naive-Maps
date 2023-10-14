@@ -21,6 +21,7 @@
   position: relative;
   top: -4rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   
 }
