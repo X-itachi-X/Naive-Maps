@@ -90,7 +90,7 @@ getCityLocation(cityName1)
 
         </input>
         <p>{lat2},{long2}</p>
-        <input type="submit" value="Submit" className="bn632-hover bn23"></input>
+        <input type="submit" value="Submit" className="bn632-hover bn23" onClick={<MapView lat={lat1} long={long1}/>}></input>
       </form>
       ) : (
         <h2><MapView lat={lat1} long={long1}/></h2>
