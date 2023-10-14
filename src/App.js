@@ -5,9 +5,7 @@ import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import MapView from './components/MapView'; // Import your MapView component here
 
 
-function Home() {
-  return <h1>Home</h1>;
-}
+
 
 function App() {
   const [cityName1, setCityName1] = useState('');
