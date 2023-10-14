@@ -98,7 +98,7 @@ function App() {
                     <input
                       className="textBox"
                       type="text"
-                      placeholder="Enter city name"
+                      placeholder="Patna"
                       value={cityName1}
                       onChange={handleCityNameChange1}
                     ></input>
