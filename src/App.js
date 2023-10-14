@@ -117,7 +117,7 @@ getCityLocation(cityName1)
               <input type="submit" value="Submit" class="bn632-hover bn23"></input>
             </form>
            
-            <Link to="/map">View Map</Link>
+            <Link to="/Naive-Maps/map">View Map</Link>
               
                 <Routes>
                    
