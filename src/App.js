@@ -93,7 +93,7 @@ function App() {
           <div className="body-content">
             <div className="box">
               <div>
-                {window.location.pathname === "/Naive-Maps" ? (
+                
                   <form>
                     <input
                       className="textBox"
@@ -123,9 +123,9 @@ function App() {
                       ></input>
                     </Link>
                   </form>
-                ) : (
+                
                   <p>map</p>
-                )}
+                
                 <Routes>
                     <Route
                       path="/Naive-Maps/map"
