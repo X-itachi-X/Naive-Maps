@@ -72,7 +72,7 @@ getCityLocation(cityName1)
   });
   return (
     <div>
-      {window.location.pathname !== '/Naive-Maps' ? (
+      {window.location.pathname === '/Naive-Maps' ? (
         <form>
         <input  className='textBox' 
                 type="text"
@@ -93,7 +93,7 @@ getCityLocation(cityName1)
         <input type="submit" value="Submit" className="bn632-hover bn23"></input>
       </form>
       ) : (
-        <h2><MapView /></h2>
+        <h2><MapView lat={lat1} long={long1}/></h2>
       )}
     </div>
   );
