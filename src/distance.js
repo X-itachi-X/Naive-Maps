@@ -14,7 +14,7 @@ function Distance({lat1,long1,lat2,long2}) {
       longitude: long2, // Replace with the second location's latitude
     },
   ]);
-
+console.log(locations);
   const calculateDistance = () => {
     const { latitude: lat1, longitude: lon1 } = locations[0];
     const { latitude: lat2, longitude: lon2 } = locations[1];
