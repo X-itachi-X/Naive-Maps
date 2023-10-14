@@ -40,7 +40,7 @@
 
 .body-content{
   position: relative;
-  top: -100vh;
+  top: -98vh;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
