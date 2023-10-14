@@ -124,13 +124,14 @@ function App() {
                     </Link>
                   </form>
                 ) : (
-                  <Routes>
+                  <p>map</p>
+                )}
+                <Routes>
                     <Route
                       path="/Naive-Maps/map"
                       element={<MapView lat={lat1} long={long1} />}
                     />
                   </Routes>
-                )}
               </div>
             </div>
           </div>
