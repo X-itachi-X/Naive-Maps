@@ -9,8 +9,8 @@ import MapView from './components/MapView'; // Import your MapView component her
 
 function App() {
   const [cityName1, setCityName1] = useState('');
-  const [long1, setlong1] = useState(85.1376);
-  const [lat1, setlat1] = useState(25.5941);
+  const [long1, setlong1] = useState(25.5941);
+  const [lat1, setlat1] = useState(85.1376);
   const [cityName2, setCityName2] = useState('');
   const [long2, setlong2] = useState('');
   const [lat2, setlat2] = useState('');
