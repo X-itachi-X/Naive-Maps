@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Naive-Maps/static/css/main.643daee3.css",
-    "main.js": "/Naive-Maps/static/js/main.d709e76f.js",
+    "main.css": "/Naive-Maps/static/css/main.fa6e770d.css",
+    "main.js": "/Naive-Maps/static/js/main.50c4e3e3.js",
     "static/js/787.1c379855.chunk.js": "/Naive-Maps/static/js/787.1c379855.chunk.js",
     "static/media/bg.jpg": "/Naive-Maps/static/media/bg.2668ed3c500a2a68d9ff.jpg",
     "index.html": "/Naive-Maps/index.html",
-    "main.643daee3.css.map": "/Naive-Maps/static/css/main.643daee3.css.map",
-    "main.d709e76f.js.map": "/Naive-Maps/static/js/main.d709e76f.js.map",
+    "main.fa6e770d.css.map": "/Naive-Maps/static/css/main.fa6e770d.css.map",
+    "main.50c4e3e3.js.map": "/Naive-Maps/static/js/main.50c4e3e3.js.map",
     "787.1c379855.chunk.js.map": "/Naive-Maps/static/js/787.1c379855.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.643daee3.css",
-    "static/js/main.d709e76f.js"
+    "static/css/main.fa6e770d.css",
+    "static/js/main.50c4e3e3.js"
   ]
 }
