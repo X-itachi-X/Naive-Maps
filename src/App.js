@@ -129,7 +129,7 @@ function App() {
                 <Routes>
                     <Route
                       path="/Naive-Maps/map"
-                      element={<MapView lat={lat1} long={long1} />}
+                      element={<MapView lat={long1} long={lat1} />}
                     />
                   </Routes>
               </div>
