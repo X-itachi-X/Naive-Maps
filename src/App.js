@@ -3,7 +3,7 @@ import './App.css';
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import MapView from './components/MapView'; // Import your MapView component here
-import Home from './HomePage'
+import HomePage from './HomePage'
 
 
 
