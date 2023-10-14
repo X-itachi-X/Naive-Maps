@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
 import "../App.css"
-import App from '../App';
+
 
 function Map({lat,long}) {
   
