@@ -2,6 +2,7 @@
 import axios from 'axios';
 import React,{ useState } from 'react';
 import './App.css';
+import MapView from './components/MapView';
 
 function HomePage() {
     const [cityName1, setCityName1] = useState('');
@@ -92,7 +93,7 @@ getCityLocation(cityName1)
         <input type="submit" value="Submit" className="bn632-hover bn23"></input>
       </form>
       ) : (
-        <h2>Welcome to the Home Page</h2>
+        <h2><MapView /></h2>
       )}
     </div>
   );
