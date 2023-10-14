@@ -120,13 +120,14 @@ function App() {
                 ></input>
               </form>
             </div>
-          </div>
-          <div className="box">
+            <div className="box">
             <Routes>
               <Route path="/Naive-Maps" />
               <Route path="/Naive-Maps/map" element={<MapView />} />
             </Routes>
           </div>
+          </div>
+          
         </main>
       </Router>
     </div>
