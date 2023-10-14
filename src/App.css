@@ -49,6 +49,8 @@
 .box{
   height: 80vh;
   margin: 0 ;
+  display: flex;
+  flex-direction: column;
   
   padding: 1rem;
   
