@@ -52,7 +52,6 @@
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  padding-bottom: 22px;
   border-radius: 1.2rem;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
@@ -107,5 +106,9 @@
 
 .emptyDiv{
   height: 4rem;
+}
+
+.map{
+  margin: 1rem;
 }
 
