@@ -84,8 +84,11 @@ function App() {
             <Link to="/Naive-Maps/map">
               <p>View Map</p>
             </Link>
+            <Link to="/Naive-Maps/distance">
+              <p>See Distance</p>
+            </Link>
 
-            <p>content 3</p>
+            
           </div>
         </header>
         <main className="body-parent">
@@ -131,6 +134,10 @@ function App() {
                     <Route
                       path="/Naive-Maps/map"
                       element={<MapView lat={long1} long={lat1} />}
+                    />
+                    <Route
+                      path="/Naive-Maps/distance"
+                      element={<DistanceView />}
                     />
                   </Routes>
               </div>
