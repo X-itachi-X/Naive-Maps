@@ -3,6 +3,7 @@ import axios from 'axios';
 import React,{ useState } from 'react';
 import './App.css';
 import MapView from './components/MapView';
+import { Link } from 'react-router-dom';
 
 function HomePage() {
     const [cityName1, setCityName1] = useState('');
@@ -90,7 +91,7 @@ getCityLocation(cityName1)
 
         </input>
         <p>{lat2},{long2}</p>
-        <input type="submit" value="Submit" className="bn632-hover bn23" onClick={<MapView lat={lat1} long={long1}/>}></input>
+        <input type="submit" value="Submit" className="bn632-hover bn23" onClick={<Link to="/Naive-Maps/map"></Link>}></input>
       </form>
       ) : (
         <h2><MapView lat={lat1} long={long1}/></h2>
