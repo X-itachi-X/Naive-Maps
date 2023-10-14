@@ -3,7 +3,7 @@ import './App.css';
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import MapView from './components/MapView'; // Import your MapView component here
-import Home from './App'
+
 
 
 
@@ -85,11 +85,11 @@ getCityLocation(cityName1)
         </div>
         <div className="header-content">
         <Router>
-          <p>Home</p>
-          <Link to="/Naive-Maps/">Home</Link>
+          
+          <Link to="/Naive-Maps/"><p>Home</p></Link>
               
               <Routes>
-                  <Route path="/Naive-Maps/" element={<Home />} />
+                  <Route path="/Naive-Maps/"  />
               </Routes>
         </Router>
           <p>content 3</p>
