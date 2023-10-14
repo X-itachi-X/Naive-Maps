@@ -122,7 +122,7 @@ getCityLocation(cityName1)
             <Link to="/Naive-Maps">Home</Link>
               
                 <Routes>
-                    <Route path="/Naive-Maps" element={<Home />} />
+                    <Route path="/" element={<Home />} />
                     <Route path="/Naive-Maps/map" element={<MapView />} />
                 </Routes>
               
