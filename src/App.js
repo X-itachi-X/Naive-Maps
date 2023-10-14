@@ -119,21 +119,15 @@ getCityLocation(cityName1)
               </input>
               <p>{lat2},{long2}</p>
               <input type="submit" value="Submit" className="bn632-hover bn23"></input>
-            </form>
-           
+            </form>         
             
-            
+        </div>
+        </div>
+      </main>
                 <Routes>
                     <Route path="/Naive-Maps"  />
                     <Route path="/Naive-Maps/map" element={<MapView />} />
                 </Routes>
-             
-            
-            
-            
-          </div>
-        </div>
-      </main>
       </Router>  
     </div>
   );
