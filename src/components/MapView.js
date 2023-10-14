@@ -6,7 +6,7 @@ import App from '../App';
 function Map({lat,long}) {
   
   const mapboxToken = 'pk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbmxxcWFsNjAyZ24yam4xanI1NDZ1NGoifQ.0meAZoM0gF_dSim2ZxrvJA'; // Replace with your actual token
-  console.log(App.lat1);
+  console.log(lat,long);
   useEffect(() => {
     mapboxgl.accessToken = mapboxToken;
 
