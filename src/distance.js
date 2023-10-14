@@ -10,7 +10,7 @@ function Distance() {
     },
     {
       name: 'Location 2',
-      latitude: -118.2437, // Replace with the second location's longitude
+      latitude: -80.2437, // Replace with the second location's longitude
       longitude: 34.0522, // Replace with the second location's latitude
     },
   ]);
