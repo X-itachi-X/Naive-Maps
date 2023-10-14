@@ -121,7 +121,7 @@ getCityLocation(cityName1)
               
                 <Routes>
                    
-                    <Route path="/map" element={<MapView />} />
+                    <Route path="/Naive-Maps/map" element={<MapView />} />
                 </Routes>
               
             
