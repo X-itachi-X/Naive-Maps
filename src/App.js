@@ -91,7 +91,7 @@ getCityLocation(cityName1)
           <Link to="/Naive-Maps"><p>Home</p></Link>
               
               <Routes>
-                  <Route path="/Naive-Maps"  element={Home}/>
+                  <Route path="/Naive-Maps"  Component={Home}/>
               </Routes>
         </Router>
           <p>content 3</p>
