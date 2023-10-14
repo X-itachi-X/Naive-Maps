@@ -20,7 +20,12 @@ const Map = () => {
     };
   }, [mapboxToken]);
 
-  return <div className="map-box" id="map-container" style={{ width: '100%', height: '300px' }} />;
+  return (
+    <div className='map-box'>
+      <div id="map-container" style={{ width: '100%', height: '300px' }} />
+    </div>
+  
+  );
 };
 
 export default Map;
