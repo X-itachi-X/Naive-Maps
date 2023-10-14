@@ -6,7 +6,7 @@ import MapView from './components/MapView'; // Import your MapView component her
 
 
 function Home() {
-  return <h1>Home Page</h1>;
+  return <h1>Home</h1>;
 }
 
 function App() {
