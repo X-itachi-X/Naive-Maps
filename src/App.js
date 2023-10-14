@@ -100,7 +100,7 @@ getCityLocation(cityName1)
         <div className='body-content'>
           <div className='box'>
             
-          <Routes>
+
             <form>
               <input  className='textBox' 
                       type="text"
@@ -120,7 +120,7 @@ getCityLocation(cityName1)
               <p>{lat2},{long2}</p>
               <input type="submit" value="Submit" className="bn632-hover bn23"></input>
             </form>   
-                 
+                 <Routes>
                     <Route path="/Naive-Maps"  />
                     <Route path="/Naive-Maps/map" element={<MapView lat={lat1} long={long1}/>} />
                 </Routes>      
