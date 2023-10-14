@@ -86,7 +86,7 @@ getCityLocation(cityName1)
         <div className="header-content">
         
           
-          <Link to="{location.pathname}"><p>Home</p></Link>
+          <Link to={location.pathname}><p>Home</p></Link>
               
               
         
