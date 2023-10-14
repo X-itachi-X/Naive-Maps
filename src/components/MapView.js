@@ -22,7 +22,7 @@ const Map = () => {
 
   return (
     
-      <div className='map' id="map-container" style={{ width: '95%', height: '300px' }} />
+      <div className='map' id="map-container" style={{ width: '90%', height: '300px' }} />
     
   
   );
