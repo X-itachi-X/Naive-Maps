@@ -121,7 +121,7 @@ function App() {
               </form>
             </div>
           </div>
-          <div className="body-content">
+          <div className="box">
             <Routes>
               <Route path="/Naive-Maps" />
               <Route path="/Naive-Maps/map" element={<MapView />} />
