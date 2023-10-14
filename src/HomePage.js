@@ -71,7 +71,7 @@ getCityLocation(cityName1)
   });
   return (
     <div>
-      {window.location.pathname === '/' ? (
+      {window.location.pathname !== '/' ? (
         <form>
         <input  className='textBox' 
                 type="text"
