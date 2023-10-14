@@ -71,7 +71,7 @@ getCityLocation(cityName1)
   });
   return (
     <div>
-      {window.location.pathname !== '/Naive-Maps' ? (
+      {window.location.pathname === '/Naive-Maps' ? (
         <form>
         <input  className='textBox' 
                 type="text"
