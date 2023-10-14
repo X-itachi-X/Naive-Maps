@@ -77,7 +77,7 @@ function App() {
         <header className="header-parent">
           <div className="header-background"></div>
           <div className="header-content">
-            <Link to="/Naive-Maps/">
+            <Link to="/Naive-Maps">
               <p>Home</p>
             </Link>
             <Link to="/Naive-Maps/map">
@@ -93,7 +93,7 @@ function App() {
           <div className="body-content">
             <div className="box">
               <div>
-                {window.location.pathname !== "/Naive-Maps/" ? (
+                {window.location.pathname === "/Naive-Maps" ? (
                   <form>
                     <input
                       className="textBox"
