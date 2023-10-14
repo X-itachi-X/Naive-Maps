@@ -50,8 +50,7 @@
   width: 65vh;
   height: auto;
   margin: 0 50px;
-  display: flex;
-  flex-direction: column;
+  
   padding: 1rem;
   
   border-radius: 1.2rem;
