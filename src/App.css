@@ -40,18 +40,17 @@
 
 .body-content{
   position: relative;
-  top: -96vh;
+  top: -90vh;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .box{
-  height: 80vh;
-  margin: 0 ;
+  width: 65vh;
+  height: auto;
+  margin: 0 50px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding: 1rem;
   
   border-radius: 1.2rem;
@@ -109,9 +108,4 @@
 .emptyDiv{
   height: 4rem;
 }
-
-.content-box{
-
-}
-
 
