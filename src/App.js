@@ -3,7 +3,7 @@ import './App.css';
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import MapView from './components/MapView'; // Import your MapView component here
-import HomePage from './HomePage'
+import FormView from './Form'
 
 
 
@@ -22,7 +22,7 @@ function App() {
         <div className="header-content">
         
           
-          <Link to="/Naive-Maps"><p>Home</p></Link>
+          <Link to="/Naive-Maps/form"><p>Home</p></Link>
           <Link to="/Naive-Maps/map"><p>View Map</p></Link>    
               
           
@@ -39,7 +39,7 @@ function App() {
 
                
                  <Routes>
-                    <Route path="/Naive-Maps" element={<HomePage />} />
+                    <Route path="/Naive-Maps/form" element={<FormView />} />
                     <Route path="/Naive-Maps/map" element={<MapView />} />
                 </Routes>      
             
