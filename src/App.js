@@ -123,11 +123,12 @@ getCityLocation(cityName1)
             
         </div>
         </div>
-      </main>
                 <Routes>
                     <Route path="/Naive-Maps"  />
                     <Route path="/Naive-Maps/map" element={<MapView />} />
                 </Routes>
+      </main>
+                
       </Router>  
     </div>
   );
