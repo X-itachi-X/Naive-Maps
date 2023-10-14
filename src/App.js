@@ -119,7 +119,7 @@ getCityLocation(cityName1)
             </form>
            
             <Link to="/Naive-Maps/map">View Map</Link>
-            <Link to="/Naive-Maps">Home</Link>
+            <Link to="/">Home</Link>
               
                 <Routes>
                     <Route path="/" element={<Home />} />
