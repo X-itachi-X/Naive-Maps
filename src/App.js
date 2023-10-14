@@ -10,8 +10,8 @@ function App() {
   const [long1, setlong1] = useState(85.1376);
   const [lat1, setlat1] = useState(25.5941);
   const [cityName2, setCityName2] = useState("");
-  const [long2, setlong2] = useState("");
-  const [lat2, setlat2] = useState("");
+  const [long2, setlong2] = useState(85.1376);
+  const [lat2, setlat2] = useState(24.5941);
   const [latitude, setLatitude] = useState(null);
   const [longitude, setLongitude] = useState(null);
   const handleCityNameChange1 = (e) => {
