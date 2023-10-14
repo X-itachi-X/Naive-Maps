@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
 
-function Distance(lat1,long1,lat2,long2) {
+function Distance({lat1,long1,lat2,long2}) {
   const [locations, setLocations] = useState([
     {
       name: 'Location 1',
