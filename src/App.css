@@ -42,7 +42,6 @@
   position: relative;
   top: -90vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
