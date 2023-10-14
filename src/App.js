@@ -86,10 +86,10 @@ getCityLocation(cityName1)
         <div className="header-content">
         <Router>
           
-          <Link to="/Naive-Maps/"><p>Home</p></Link>
+          <Link to="/Naive-Maps"><p>Home</p></Link>
               
               <Routes>
-                  <Route path="/Naive-Maps/"  />
+                  <Route path="/Naive-Maps"  />
               </Routes>
         </Router>
           <p>content 3</p>
