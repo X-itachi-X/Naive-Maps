@@ -5,7 +5,9 @@ import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import MapView from './components/MapView'; // Import your MapView component here
 
 
-
+function Home() {
+  return <h1>Home Page</h1>;
+}
 
 function App() {
   const [cityName1, setCityName1] = useState('');
@@ -89,6 +91,7 @@ getCityLocation(cityName1)
           <Link to="/Naive-Maps"><p>Home</p></Link>
               
               <Routes>
+                  <Route path="/" exact component={Home} />
                   <Route path="/Naive-Maps"  />
               </Routes>
         </Router>
