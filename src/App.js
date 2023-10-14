@@ -3,6 +3,7 @@ import './App.css';
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import MapView from './components/MapView'; // Import your MapView component here
+import Home from './index'
 
 
 
@@ -118,9 +119,10 @@ getCityLocation(cityName1)
             </form>
            
             <Link to="/Naive-Maps/map">View Map</Link>
+            <Link to="/Naive-Maps">Home</Link>
               
                 <Routes>
-                   
+                    <Route path="/Naive-Maps" element={<Home />} />
                     <Route path="/Naive-Maps/map" element={<MapView />} />
                 </Routes>
               
