@@ -3,7 +3,7 @@ import mapboxgl from 'mapbox-gl';
 import "../App.css"
 
 
-function Map({lat,long}) {
+function Map({lat=25,long=25}) {
   
   const mapboxToken = 'pk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbmxxcWFsNjAyZ24yam4xanI1NDZ1NGoifQ.0meAZoM0gF_dSim2ZxrvJA'; // Replace with your actual token
   console.log(lat,long);
