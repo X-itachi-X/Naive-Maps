@@ -26,9 +26,7 @@ function Map({lat,long}) {
       container: 'map', // The container ID where the map will be rendered
       style: 'mapbox://styles/ravisumit/clnipt7wy03yf01qu2iljfl8g', // You can choose a different map style
       center: [lat, long], // Centered on New York City
-      zoom: 10,
-      unit: 'metric',
-      profile: 'mapbox/cycling' // Zoom level
+      zoom: 10, // Zoom level
     });
 
     map.addControl(new mapboxgl.NavigationControl());
