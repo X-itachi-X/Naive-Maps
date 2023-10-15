@@ -45,21 +45,21 @@ console.log(locations);
       zoom: 5, // Adjust the zoom level as needed
     });
 
-    // Create markers for locations
-  //   locations.forEach((location, index) => {
-  //     new mapboxgl.Marker({ color: 'blue' })
-  //       .setLngLat([location.longitude, location.latitude])
-  //       .addTo(map);
-  //   });
-  // }, [locations]);
+    //Create markers for locations
+    locations.forEach((location, index) => {
+      new mapboxgl.Marker({ color: 'blue' })
+        .setLngLat([location.longitude, location.latitude])
+        .addTo(map);
+    });
+  }, [locations]);
 
-  map.on('click', (e) => {
-    const { lng, lat } = e.lngLat;
-    new mapboxgl.Marker({ color: 'red' })
-      .setLngLat([lng, lat])
-      .addTo(map);
-  });
-}, [locations]);
+//   map.on('click', (e) => {
+//     const { lng, lat } = e.lngLat;
+//     new mapboxgl.Marker({ color: 'red' })
+//       .setLngLat([lng, lat])
+//       .addTo(map);
+//   });
+// }, [locations]);
 
   return (
     <div>
