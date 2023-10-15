@@ -44,10 +44,10 @@ console.log(locations);
       center: [locations[0].longitude, locations[0].latitude], // Use the first location
       zoom: 5, // Adjust the zoom level as needed
     });
-
+    const colour = ['red','blue'];
     //Create markers for locations
     locations.forEach((location, index) => {
-      new mapboxgl.Marker({ color: 'blue' })
+      new mapboxgl.Marker({ color: colour[index] })
         .setLngLat([location.longitude, location.latitude])
         .addTo(map);
     });
