@@ -25,7 +25,7 @@ function Map({lat,long}) {
       // Create a custom marker element
     
       // Set the marker's position
-      new mapboxgl.Marker()
+      new mapboxgl.Marker({})
         .setLngLat([lng, lat])
         .addTo(map);
         console.log(`marker Set on ${lng},${lat}`);
