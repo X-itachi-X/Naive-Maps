@@ -20,7 +20,7 @@ function Map({lat,long}) {
     });
 
     map.on('click', (e) => {
-      const { lng, late } = e.lngLat;
+      const { lng, late } = e.lngLate;
     
       // Create a custom marker element
     
