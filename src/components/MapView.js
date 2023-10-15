@@ -29,6 +29,7 @@ function Map({lat,long}) {
         .setLngLat([lat, long])
         .addTo(map);
     });
+    console.log("marker");
     
       
   
