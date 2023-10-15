@@ -37,6 +37,11 @@ function Map({lat,long}) {
     });
 
 
+    map.addControl(directions, 'top-left');
+
+    // Set origin and destination waypoints programmatically
+    directions.setOrigin([-122.4194, 37.7749]); // Example coordinates for San Francisco
+    directions.setDestination([-122.4058, 37.7829]);
     
     map.on('click', (e) => {
       const { lng, lat } = e.lngLat;
