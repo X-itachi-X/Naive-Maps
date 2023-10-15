@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
 import "../App.css"
 import 'mapbox-gl/dist/mapbox-gl.css';
-//import MapboxDirections from '@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions';
+import MapboxDirections from 'mapbox/mapbox-gl-directions/dist/mapbox-gl-directions';
 
 function getRandomColor() {
   const letters = '0123456789ABCDEF';
