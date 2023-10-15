@@ -28,8 +28,9 @@ function Map({lat,long}) {
       new mapboxgl.Marker()
         .setLngLat([lng, late])
         .addTo(map);
+        console.log(`marker Set on ${lng},${late}`);
     });
-    console.log(`marker Set on ${lat},${long}`);
+   
     
       
   
