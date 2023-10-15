@@ -30,7 +30,14 @@ function Map({lat,long}) {
     });
 
     map.addControl(new mapboxgl.NavigationControl());
+    const directions = new MapboxDirections({
+      accessToken: mapboxgl.accessToken,
+      unit: 'metric',
+      profile: 'mapbox/driving-traffic', // You can change the profile to 'walking', 'cycling', etc.
+    });
 
+
+    
     map.on('click', (e) => {
       const { lng, lat } = e.lngLat;
       const randomColor = getRandomColor();
