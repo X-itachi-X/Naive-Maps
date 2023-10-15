@@ -47,7 +47,7 @@ console.log(locations);
 
     // Create markers for locations
     locations.forEach((location, index) => {
-      new mapboxgl.Marker()
+      new mapboxgl.Marker({ color: 'blue' })
         .setLngLat([location.longitude, location.latitude])
         .addTo(map);
     });
