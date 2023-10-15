@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
 import "../App.css"
 import 'mapbox-gl/dist/mapbox-gl.css';
-import MapboxDirections from 'mapbox/mapbox-gl-directions';
+import MapboxDirections from '@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions';
 
 function getRandomColor() {
   const letters = '0123456789ABCDEF';
@@ -42,7 +42,7 @@ function Map({lat,long}) {
     // Set origin and destination waypoints programmatically
     directions.setOrigin([-122.4194, 37.7749]); // Example coordinates for San Francisco
     directions.setDestination([-122.4058, 37.7829]);
-    
+
     map.on('click', (e) => {
       const { lng, lat } = e.lngLat;
       const randomColor = getRandomColor();
