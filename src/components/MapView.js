@@ -17,12 +17,10 @@ function Map({lat,long}) {
       zoom: 10, // Zoom level
     });
 
-    map.on('click', (e) => {
-      const { lng, lat } = e.lngLat;
-      new mapboxgl.Marker({ color: 'red' })
-        .setLngLat([lng, lat])
+    
+      new mapboxgl.Marker()
+        .setLngLat([lat, long])
         .addTo(map);
-    });
   
   
 
