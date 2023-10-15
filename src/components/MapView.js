@@ -17,7 +17,7 @@ function Map({lat,long}) {
   
   const mapboxToken = 'pk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbmxxcWFsNjAyZ24yam4xanI1NDZ1NGoifQ.0meAZoM0gF_dSim2ZxrvJA'; // Replace with your actual token
   console.log(lat,long);
-  const randomColor = getRandomColor();
+  
   useEffect(() => {
     mapboxgl.accessToken = mapboxToken;
 
@@ -30,7 +30,7 @@ function Map({lat,long}) {
 
     map.on('click', (e) => {
       const { lng, lat } = e.lngLat;
-    
+      const randomColor = getRandomColor();
       // Create a custom marker element
     
       // Set the marker's position
@@ -48,7 +48,7 @@ function Map({lat,long}) {
     return () => {
       map.remove(); // Clean up when the component is unmounted
     };
-  }, [lat, long, mapboxToken, randomColor]);
+  }, [lat, long, mapboxToken]);
 
   return (
     
