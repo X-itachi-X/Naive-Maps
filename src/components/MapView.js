@@ -20,13 +20,13 @@ function Map({lat,long}) {
     });
 
     map.on('click', (e) => {
-      //const { lng, lat } = e.lngLat;
+      const { lng, late } = e.lngLat;
     
       // Create a custom marker element
     
       // Set the marker's position
       new mapboxgl.Marker()
-        .setLngLat([lat, long])
+        .setLngLat([lng, late])
         .addTo(map);
     });
     console.log(`marker Set on ${lat},${long}`);
