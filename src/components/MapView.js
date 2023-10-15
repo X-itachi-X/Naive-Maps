@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
 import "../App.css"
+import 'mapbox-gl/dist/mapbox-gl.css';
+
 
 
 function Map({lat,long}) {
@@ -21,8 +23,6 @@ function Map({lat,long}) {
       //const { lng, lat } = e.lngLat;
     
       // Create a custom marker element
-      const markerElement = document.createElement('div');
-      markerElement.className = 'custom-marker';
     
       // Set the marker's position
       new mapboxgl.Marker()
