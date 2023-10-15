@@ -28,6 +28,8 @@ function Map({lat,long}) {
       zoom: 10, // Zoom level
     });
 
+    map.addControl(new mapboxgl.NavigationControl());
+
     map.on('click', (e) => {
       const { lng, lat } = e.lngLat;
       const randomColor = getRandomColor();
