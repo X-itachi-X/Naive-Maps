@@ -3,12 +3,21 @@ import mapboxgl from 'mapbox-gl';
 import "../App.css"
 import 'mapbox-gl/dist/mapbox-gl.css';
 
+function getRandomColor() {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
 
 
 function Map({lat,long}) {
   
   const mapboxToken = 'pk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbmxxcWFsNjAyZ24yam4xanI1NDZ1NGoifQ.0meAZoM0gF_dSim2ZxrvJA'; // Replace with your actual token
   console.log(lat,long);
+  const randomColor = getRandomColor();
   useEffect(() => {
     mapboxgl.accessToken = mapboxToken;
 
@@ -25,7 +34,7 @@ function Map({lat,long}) {
       // Create a custom marker element
     
       // Set the marker's position
-      new mapboxgl.Marker({})
+      new mapboxgl.Marker({color: randomColor})
         .setLngLat([lng, lat])
         .addTo(map);
         console.log(`marker Set on ${lng},${lat}`);
@@ -39,7 +48,7 @@ function Map({lat,long}) {
     return () => {
       map.remove(); // Clean up when the component is unmounted
     };
-  }, [lat, long, mapboxToken]);
+  }, [lat, long, mapboxToken, randomColor]);
 
   return (
     
