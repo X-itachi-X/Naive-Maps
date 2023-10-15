@@ -31,7 +31,7 @@ function Map({lat,long}) {
 
   return (
     
-      <div className='map' id="map-container" style={{ width: '90%', height: '50vh' }} />
+      <div className='map' id="map" style={{ width: '90%', height: '50vh' }} />
     
   
   );
