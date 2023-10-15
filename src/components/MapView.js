@@ -17,10 +17,20 @@ function Map({lat,long}) {
       zoom: 10, // Zoom level
     });
 
+    map.on('click', (e) => {
+      //const { lng, lat } = e.lngLat;
     
+      // Create a custom marker element
+      const markerElement = document.createElement('div');
+      markerElement.className = 'custom-marker';
+    
+      // Set the marker's position
       new mapboxgl.Marker()
         .setLngLat([lat, long])
         .addTo(map);
+    });
+    
+      
   
   
 
