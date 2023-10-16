@@ -125,7 +125,7 @@ function App() {
                     </Link>
                   </form>
                 
-                  <p>MapView.distance</p>
+                  <p>{MapView.distance}</p>
                 
                 <Routes>
                     <Route
