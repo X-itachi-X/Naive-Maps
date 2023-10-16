@@ -56,8 +56,8 @@ console.log(locations);
     map.addControl(directions, 'top-left');
 
     // Set origin and destination waypoints programmatically
-    directions.setOrigin([-122.4194, 37.7749]); // Example coordinates for San Francisco
-    directions.setDestination([-122.4058, 37.7829]);
+    directions.setOrigin([lat1, long1]); // Example coordinates for San Francisco
+    directions.setDestination([lat2, long2]);
     const colour = ['red','blue'];
     //Create markers for locations
     locations.forEach((location, index) => {
