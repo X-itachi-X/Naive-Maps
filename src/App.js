@@ -110,7 +110,7 @@ function App() {
                     <input
                       className="textBox"
                       ype="text"
-                      placeholder="Enter city name"
+                      placeholder="Jehanabad"
                       value={cityName2}
                       onChange={handleCityNameChange2}
                     ></input>
