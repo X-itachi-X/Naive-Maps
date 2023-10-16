@@ -57,7 +57,7 @@ console.log(locations);
     const map = new mapboxgl.Map({
       container: "map", // The container ID where the map will be rendered
       style: "mapbox://styles/ravisumit/clnipt7wy03yf01qu2iljfl8g", // You can choose a different map style
-      center: [lat1, long1], // Centered on New York City
+      center: [long1, lat1], // Centered on New York City
       zoom: 10, // Zoom level
     });
 
