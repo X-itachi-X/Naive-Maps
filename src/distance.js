@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
+import * as MapboxDirections from '@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions';
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 function Distance({lat1,long1,lat2,long2}) {
   const [locations, setLocations] = useState([
@@ -44,6 +46,18 @@ console.log(locations);
       center: [locations[0].longitude, locations[0].latitude], // Use the first location
       zoom: 5, // Adjust the zoom level as needed
     });
+
+    map.addControl(new mapboxgl.NavigationControl());
+    const directions = new MapboxDirections({
+      accessToken: mapboxgl.accessToken,
+      unit: 'metric',
+      profile: 'mapbox/driving-traffic', // You can change the profile to 'walking', 'cycling', etc.
+    });
+    map.addControl(directions, 'top-left');
+
+    // Set origin and destination waypoints programmatically
+    directions.setOrigin([-122.4194, 37.7749]); // Example coordinates for San Francisco
+    directions.setDestination([-122.4058, 37.7829]);
     const colour = ['red','blue'];
     //Create markers for locations
     locations.forEach((location, index) => {
@@ -52,6 +66,9 @@ console.log(locations);
         .addTo(map);
     });
   }, [locations]);
+
+  
+  
 
 //   map.on('click', (e) => {
 //     const { lng, lat } = e.lngLat;
