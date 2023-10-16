@@ -98,8 +98,8 @@ function App() {
           <div className="body-content">
             <div className="box">
               <div>
-                
-                  <form>
+                if()
+                  (<form>
                     <input
                       className="textBox"
                       type="text"
@@ -123,7 +123,8 @@ function App() {
                         className="bn632-hover bn23"
                       ></input>
                     </Link>
-                  </form>
+                  </form>):
+                  ()
                 
                   <p>{MapView.distance}</p>
                 
