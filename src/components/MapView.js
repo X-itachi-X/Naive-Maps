@@ -72,6 +72,7 @@ console.log(locations);
         .addTo(map);
       console.log(`marker Set on ${lng},${lat}`);
     });
+    
     const colour = ['red','blue'];
     //Create markers for locations
     locations.forEach((location, index) => {
