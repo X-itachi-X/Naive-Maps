@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
-import MapboxDirection from '@mapbox/mapbox-gl-directions';
+import * as MapboxDirections from '@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions';
 import "../App.css"
 import 'mapbox-gl/dist/mapbox-gl.css';
 
@@ -16,7 +16,7 @@ function getRandomColor() {
 
 
 function Map({lat,long}) {
-  var MapboxDirections = require('@mapbox/mapbox-gl-directions');
+  
   const mapboxToken = 'pk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbmxxcWFsNjAyZ24yam4xanI1NDZ1NGoifQ.0meAZoM0gF_dSim2ZxrvJA'; // Replace with your actual token
   console.log(lat,long);
   
