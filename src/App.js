@@ -26,7 +26,7 @@ function App() {
 
   // Replace 'YOUR_MAPBOX_API_KEY' with your actual Mapbox API key.
   const MAPBOX_API_KEY =
-    "sk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbm14Ymk0eTAwZnMyaXAxNmNoZGZocGUifQ.fZcPqWqoZXQhYQ-WmvdU5Q";
+    "pk.eyJ1IjoicmF2aXN1bWl0IiwiYSI6ImNsbmxxcWFsNjAyZ24yam4xanI1NDZ1NGoifQ.0meAZoM0gF_dSim2ZxrvJA";
 
   async function getCityLocation(cityName) {
     try {
