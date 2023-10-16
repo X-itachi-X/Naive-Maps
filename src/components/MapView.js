@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
+import MapboxDirection from '@mapbox/mapbox-gl-directions';
 import "../App.css"
 import 'mapbox-gl/dist/mapbox-gl.css';
 
