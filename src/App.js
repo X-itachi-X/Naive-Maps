@@ -98,8 +98,7 @@ function App() {
           <div className="body-content">
             <div className="box">
               <div>
-              {window.location.pathname === '/' ?
-                  (<form>
+              <form>
                     <input
                       className="textBox"
                       type="text"
@@ -123,8 +122,8 @@ function App() {
                         className="bn632-hover bn23"
                       ></input>
                     </Link>
-                  </form>):
-                  (<MapView />)}
+                  </form>
+                 
                 
                   <p>{MapView.distance}</p>
                 
