@@ -60,11 +60,11 @@ console.log(locations);
     // directions.setDestination([lat2, long2]);
     const colour = ['red','blue'];
     //Create markers for locations
-    // locations.forEach((location, index) => {
-    //   new mapboxgl.Marker({ color: colour[index] })
-    //     .setLngLat([location.longitude, location.latitude])
-    //     .addTo(map);
-    // });
+    locations.forEach((location, index) => {
+      new mapboxgl.Marker({ color: colour[index] })
+        .setLngLat([location.longitude, location.latitude])
+        .addTo(map);
+    });
   }, [locations]);
 
   
