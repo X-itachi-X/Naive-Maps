@@ -35,6 +35,7 @@ console.log(locations);
     const distance = radius * c;
 
     return distance;
+    
   };
 
   useEffect(() => {
@@ -80,7 +81,6 @@ console.log(locations);
 
   return (
     <div>
-      <h1>Distance between {locations[0].name} and {locations[1].name}</h1>
       <p>Distance: {calculateDistance().toFixed(2)} km</p>
       <div id="map" style={{ width: '100%', height: '400px' }}></div>
     </div>
@@ -88,3 +88,4 @@ console.log(locations);
 }
 
 export default Distance;
+
