@@ -107,9 +107,7 @@ function App() {
                       value={cityName1}
                       onChange={handleCityNameChange1}
                     ></input>
-                    <p>
-                      {lat1},{long1}
-                    </p>
+                    
                     <input
                       className="textBox"
                       ype="text"
@@ -117,9 +115,7 @@ function App() {
                       value={cityName2}
                       onChange={handleCityNameChange2}
                     ></input>
-                    <p>
-                      {lat2},{long2}
-                    </p>
+                
                     <Link to="/Naive-Maps/map">
                       <input
                         type="submit"
@@ -129,7 +125,7 @@ function App() {
                     </Link>
                   </form>
                 
-                  <p>map</p>
+                  <p>MapView.distance</p>
                 
                 <Routes>
                     <Route
