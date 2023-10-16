@@ -98,7 +98,7 @@ function App() {
           <div className="body-content">
             <div className="box">
               <div>
-                if()
+              {window.location.pathname === '/' ?
                   (<form>
                     <input
                       className="textBox"
@@ -124,7 +124,7 @@ function App() {
                       ></input>
                     </Link>
                   </form>):
-                  ()
+                  (<MapView />)}
                 
                   <p>{MapView.distance}</p>
                 
