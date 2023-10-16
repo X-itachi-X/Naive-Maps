@@ -29,6 +29,7 @@ function Map({lat,long}) {
       center: [lat, long], // Centered on New York City
       zoom: 10, // Zoom level
     });
+    
 
     
 
